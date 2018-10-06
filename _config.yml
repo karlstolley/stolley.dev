@@ -4,3 +4,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+highlighter: using_prism_thanks
