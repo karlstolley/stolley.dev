@@ -7,3 +7,31 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+html {
+  background: #1a1a14;
+  color: #f2f1e6;
+  font-family: 'SST? W05', 'SST® W05', 'SST W05';
+  font-size: 20px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #e6dfa1;
+  text-decoration: none;
+}
+
+pre {
+  font-size: 18px;
+  margin: 12px 0;
+  padding: 12px;
+}
+
+code {
+  font-weight: 800;
+  -moz-font-feature-settings: "zero";
+  -webkit-font-feature-settings: "zero";
+  font-feature-settings: "zero";
+}
+
