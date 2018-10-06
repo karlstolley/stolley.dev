@@ -35,6 +35,20 @@ code {
   font-feature-settings: "zero";
 }
 
+#header,
+#footer {
+  padding: 36px 24px;
+  border-bottom: 1px solid #323228;
+}
+#footer {
+  border: 0;
+}
+#content,
+#about {
+  padding: 24px;
+  border-bottom: 1px solid #323228;
+}
+
 
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+ruby+git+json */
