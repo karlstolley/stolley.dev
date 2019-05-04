@@ -8,9 +8,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* Global TODO:
+    * Relative-unit conversions
+*/
+
+/*
+  SST Style & Weight Reference (custom kit)
+  400: normal + italic
+  700: bold
+  500: condensed
+  600: condensed bold
+  800: typewriter (monospaced)
+*/
+
 html {
   background: #1a1a14;
   color: #f2f1e6;
+  /* TODO: Add fallback families */
   font-family: 'SST® W05', 'SST? W05', 'SST W05';
   font-size: 20px;
   line-height: 24px;
