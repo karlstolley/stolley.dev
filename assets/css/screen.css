@@ -22,8 +22,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  background: #1a1a14;
-  color: #f2f1e6;
+  background: #EEE;
+  color: #222;
   /* TODO: Add fallback families */
   font-family: dejarip, 'SST® W05', 'SST? W05', 'SST W05';
   font-size: 20px;
@@ -44,7 +44,7 @@ h1,h2,h3 {
 }
 
 a {
-  color: #e6dfa1;
+  color: #225599;
   text-decoration: none;
 }
 
@@ -70,7 +70,6 @@ pre {
 #header,
 #footer {
   padding: 36px 24px;
-  border-bottom: 1px solid #323228;
 }
 #footer {
   border: 0;
@@ -78,7 +77,6 @@ pre {
 #content,
 #about {
   padding: 24px;
-  border-bottom: 1px solid #323228;
 }
 
 
