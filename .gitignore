@@ -1,2 +1,5 @@
 _site/
 .jekyll-metadata
+
+# Temporarily ignore content of posts
+_posts/
