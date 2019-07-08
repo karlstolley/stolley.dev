@@ -1,36 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>{% if page.title %}{{ page.title}}: {% endif %}stolley.dev</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" href="/assets/css/screen.css" />
-  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/7e882d9b-5185-4490-9762-3d42a142f5c8.css"/>
-</head>
+{% include head.html %}
+
 <body>
-  <header id="header">
-    <h1><a href="https://stolley.dev/">stolley.dev</a></h1>
-  </header>
+
+  {% include header.html %}
+
   <main id="content">
     {{ content }}
   </main>
-  <aside id="about">
-    <h2>About</h2>
-    <p>
-      Some might call me a full-stack web developer, but I just like working wherever the difficult
-      problems are.
-    </p>
-    <h2>Elsewhere</h2>
-    <ul>
-      <li><a href="https://github.com/karlstolley">GitHub</a></li>
-      <li><a href="https://dev.to/stolleydotdev">DEV.to</a></li>
-      <li><a href="https://www.linkedin.com/in/karlstolley/">LinkedIn</a></li>
-      <li><a href="https://twitter.com/stolleydotdev">Twitter</a></li>
-    </ul>
-  </aside>
-  <footer id="footer">
-    <small>Site contents &amp; design by K Stolley.</small>
-  </footer>
-<script src="/assets/js/site.js"></script>
+
+  {% include aside.html %}
+  {% include footer.html %}
+
 </body>
 </html>
