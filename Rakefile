@@ -41,6 +41,7 @@ namespace :new do
         title: #{title}
         url: #{url}
         category: linked
+        layout: linked
         ---
 
         > Quoted material...
