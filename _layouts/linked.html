@@ -5,6 +5,14 @@
   {% include header.html %}
 
   <main id="content">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <ul class="meta">
+        {% assign link_parts = page.link | split: "/" %}
+        <li>{{ page.date | date: "%-d %B %Y" }}</li>
+        <li><a href="{{ page.link }}">{{ link_parts[2] }}</a><!-- domain of link, linked to the item --></li>
+      </ul>
+    </header>
     {{ content }}
   </main>
 
