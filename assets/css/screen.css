@@ -13,12 +13,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 /*
-  SST Style & Weight Reference (custom kit)
+  Benton Style & Weight Reference
+  benton-sans
   400: normal + italic
-  700: bold
-  500: condensed
-  600: condensed bold
-  800: typewriter (monospaced)
+  700: bold + italic
+  benton-sans-condensed
+  400: normal + italic
+  700: bold + italic
 */
 
 html {
