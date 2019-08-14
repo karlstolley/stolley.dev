@@ -31,15 +31,15 @@ namespace :new do
   task :link do
     print "Link title: "
     title = STDIN.gets.chomp
-    print "URL: "
-    url = STDIN.gets.chomp
+    print "Link URL: "
+    link = STDIN.gets.chomp
     file_name = "#{Date.today.strftime("%F")}-#{title.downcase.gsub(/\s/,'-').gsub(/[^\w-]/,'').gsub(/[-]{2,}/,'-')}.md"
     puts "File name: #{file_name}"
     File.open("_posts/#{file_name}","w") do |f|
       f.write <<~YML.chomp
         ---
         title: #{title}
-        url: #{url}
+        link: #{link}
         category: linked
         layout: linked
         ---
