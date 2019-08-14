@@ -59,25 +59,6 @@ a {
   text-decoration: none;
 }
 
-code,
-pre {
-  font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
-  font-size: 18px;
-}
-pre {
-  margin: 12px -24px;
-  padding: 12px 24px;
-}
-
-.sst code {
-  font-family: 'SST® W05';
-  font-weight: 800; /* Custom weight assignment on fonts.com */
-  /* Display the alternate slashed zero */
-  -moz-font-feature-settings: "zero";
-  -webkit-font-feature-settings: "zero";
-  font-feature-settings: "zero";
-}
-
 #header,
 #footer {
   padding: 36px 24px;
@@ -90,6 +71,20 @@ pre {
   padding: 24px;
 }
 
+
+
+
+
+/* Styles for Source-code Examples */
+code,
+pre {
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+pre {
+  margin: 12px -24px;
+  padding: 12px 24px;
+}
 
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+ruby+git+json */
