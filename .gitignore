@@ -1,2 +1,5 @@
 _site/
 .jekyll-metadata
+
+# Temporarily ignore content of old test posts
+_posts/2019-07*
