@@ -6,7 +6,7 @@
 
   <main id="content">
     <header>
-      <h1>{{ page.title }}</h1>
+      <h1>{{ page.title | markdownify }}</h1>
       <ul class="meta">
         {% assign link_parts = page.link | split: "/" %}
         <li>{{ page.date | date: "%-d %B %Y" }}</li>
