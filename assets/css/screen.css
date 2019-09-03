@@ -45,6 +45,10 @@ h1,h2,h3 {
   padding-bottom: 36px;
 }
 
+#header h1 {
+  font-weight: 500;
+}
+
 #content h1 {
   font-family: benton-sans-condensed;
   font-size: 30px;
