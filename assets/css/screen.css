@@ -229,11 +229,11 @@ pre[class*="language-"] {
 * @author leshido
 */
 
-body.g {
+.g body {
     position: relative;
 }
 
-body.g::after {
+.g body::after {
     background: url('data:image/svg+xml;utf8,<svg height="24" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
 
     content: "";
@@ -247,6 +247,6 @@ body.g::after {
     position: absolute;
 }
 
-body.g:active::after {
+.g body:active::after {
     display: none;
 }
