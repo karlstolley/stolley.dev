@@ -78,8 +78,11 @@ a {
 /* Styles for Source-code Examples */
 code,
 pre {
-  font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
-  font-size: 18px;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', Courier, monospace;
+  font-size: 0.9411764706; /* 16px */
+  font-weight: normal;
+  padding: 0 0.25em 0 0.25em; /* 4px */
+  background: #DDD;
 }
 pre {
   margin: 12px -24px;
