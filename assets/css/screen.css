@@ -64,6 +64,16 @@ a {
   text-decoration: none;
 }
 
+blockquote {
+  color: #555;
+  padding: 2px 0 10px 0;
+  font-weight: 400;
+}
+blockquote p {
+  border-left: 2px solid #BBB;
+  padding: 4px 0 8px 10px;
+}
+
 #header,
 #footer {
   padding: 36px 24px;
