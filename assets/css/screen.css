@@ -95,6 +95,7 @@ code,
 pre {
   font-family: Menlo, Monaco, Consolas, 'Courier New', Courier, monospace;
   font-size: 0.9411764706; /* 16px */
+  font-style: normal;
   font-weight: normal;
   padding: 0 0.25em 0 0.25em; /* 4px */
   background: #DDD;
