@@ -103,6 +103,10 @@ pre {
 pre {
   margin: 12px -24px;
   padding: 12px 24px;
+  color: #EEE; /* For dark code examples -> TODO: fix this */
+}
+pre code {
+  background: inherit;
 }
 
 /* PrismJS 1.15.0
