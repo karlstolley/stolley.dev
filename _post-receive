@@ -1,0 +1,20 @@
+DOMAIN=stolley.dev
+# Don't forget the path to shimmed gems
+PATH=$PATH:$HOME/.rbenv/shims/
+GIT_REPO=$HOME/repo/$DOMAIN.git
+TMP_GIT_CLONE=/tmp/$DOMAIN
+WWW=/var/www/$DOMAIN/html
+
+git clone $GIT_REPO $TMP_GIT_CLONE
+
+cd $TMP_GIT_CLONE
+bundle install
+bundle exec jekyll build
+
+# Remove existing content and place new
+rm -rf $WWW/*
+mv $TMP_GIT_CLONE/_site/* $WWW
+
+# Clean up the temporary clone
+rm -rf $TMP_GIT_CLONE
+exit
