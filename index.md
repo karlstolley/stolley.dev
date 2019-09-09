@@ -6,7 +6,19 @@
 <ul>
 {% for post in site.posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <article class="{{ post.categories }}">
+      <header>
+        <h1>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+        <ul class="meta">
+          <li>{{ post.date | date: "%-d %B %Y" }}</li>
+          {% if post.link %}
+            {% assign link_parts = post.link | split: "/" %}
+            <li><a href="{{ post.link }}">{{ link_parts[2] }}</a></li>
+          {% endif %}
+        </ul>
+      </header>
+      {{ content }}
+    </article>
   </li>
 {% endfor %}
 </ul>

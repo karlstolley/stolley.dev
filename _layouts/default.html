@@ -1,8 +1,11 @@
 {% include header.html %}
 
-  <main id="content">
-    {{ content }}
-  </main>
+<article class="{{ page.categories }}">
+  <header>
+    <h1>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+  </header>
+  {{ content }}
+</article>
 
 {% include aside.html %}
 {% include footer.html %}

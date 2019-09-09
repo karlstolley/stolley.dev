@@ -2,7 +2,7 @@
 
   <article class="{{ page.categories }}">
     <header>
-      <h1>{{ page.title | markdownify }}</h1>
+      <h1>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
       <ul class="meta">
         <li>{{ page.date | date: "%-d %B %Y" }}</li>
       </ul>
