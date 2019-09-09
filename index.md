@@ -2,7 +2,7 @@
 ---
 
 <ul>
-{% for post in site.posts %}
+{% for post in site.posts limit:10 %}
   <li>
     <article class="{{ post.categories }}">
       <header>
@@ -15,7 +15,7 @@
           {% endif %}
         </ul>
       </header>
-      {{ content }}
+      {{ post.content }}
     </article>
   </li>
 {% endfor %}
