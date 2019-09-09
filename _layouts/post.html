@@ -1,21 +1,14 @@
-{% include head.html %}
+{% include header.html %}
 
-<body class="post">
+<article class="{{ page.categories }}">
+  <header>
+    <h1>{{ page.title | markdownify }}</h1>
+    <ul class="meta">
+      <li>{{ page.date | date: "%-d %B %Y" }}</li>
+    </ul>
+  </header>
+  {{ content }}
+</article>
 
-  {% include header.html %}
-
-  <main id="content">
-    <header>
-      <h1>{{ page.title | markdownify }}</h1>
-      <ul class="meta">
-        <li>{{ page.date | date: "%-d %B %Y" }}</li>
-      </ul>
-    </header>
-    {{ content }}
-  </main>
-
-  {% include aside.html %}
-  {% include footer.html %}
-
-</body>
-</html>
+{% include aside.html %}
+{% include footer.html %}
