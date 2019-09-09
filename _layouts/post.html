@@ -1,14 +1,14 @@
 {% include header.html %}
 
-<article class="{{ page.categories }}">
-  <header>
-    <h1>{{ page.title | markdownify }}</h1>
-    <ul class="meta">
-      <li>{{ page.date | date: "%-d %B %Y" }}</li>
-    </ul>
-  </header>
-  {{ content }}
-</article>
+  <article class="{{ page.categories }}">
+    <header>
+      <h1>{{ page.title | markdownify }}</h1>
+      <ul class="meta">
+        <li>{{ page.date | date: "%-d %B %Y" }}</li>
+      </ul>
+    </header>
+    {{ content }}
+  </article>
 
 {% include aside.html %}
 {% include footer.html %}

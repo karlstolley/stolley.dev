@@ -1,6 +1,5 @@
-  {% include header.html %}
+{% include header.html %}
 
-  <!-- With leaner layout -->
   <article class="{{ page.categories }}">
     <header>
       <h1><a href="{{ page.link }}">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a></h1>
@@ -13,5 +12,5 @@
     {{ content }}
   </article>
 
-  {% include aside.html %}
-  {% include footer.html %}
+{% include aside.html %}
+{% include footer.html %}
