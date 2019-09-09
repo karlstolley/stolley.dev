@@ -8,7 +8,7 @@
   <li>
     <article class="{{ post.categories }}">
       <header>
-        <h1>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+        <h3>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</h3>
         <ul class="meta">
           <li>{{ post.date | date: "%-d %B %Y" }}</li>
           {% if post.link %}
