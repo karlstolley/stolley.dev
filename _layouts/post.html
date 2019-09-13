@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="{{ page.categories }}">
+<article class="{{ page.categories | join: " " }}">
   <header>
     <h2>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h2>
     <ul class="meta">
