@@ -160,6 +160,7 @@ pre[class*="language-"] {
 .token.doctype,
 .token.cdata {
   color: slategray;
+  color: #708090; /* Safari/iOS doesn't handle slategray correctly?! */
 }
 
 .token.punctuation {
