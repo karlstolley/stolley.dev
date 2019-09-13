@@ -2,7 +2,6 @@
 title: Breaking Down the Monolith of `git checkout` in Git 2.23
 link: https://github.blog/2019-08-16-highlights-from-git-2-23/
 category: linked
-layout: linked
 ---
 
 Great overview of the changes in Git 2.23, care of Taylor Blau on the GitHub.com blog:

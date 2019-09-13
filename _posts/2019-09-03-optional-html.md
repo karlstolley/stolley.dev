@@ -2,7 +2,6 @@
 title: Optional HTML
 link: https://meiert.com/en/blog/optional-html/
 category: linked
-layout: linked
 ---
 
 Jens Meiert is a big fan of omitting optional HTML. He’s assembled [a pretty exhaustive
