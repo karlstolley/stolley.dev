@@ -76,8 +76,8 @@ blockquote {
 blockquote p {
   border-left: 4px solid #BBB;
   background: #DDD;
-  margin-left: -14px;
-  padding: 6px 0 6px 10px;
+  margin: 0 -14px;
+  padding: 6px 4px 6px 10px;
 }
 
 #header,
