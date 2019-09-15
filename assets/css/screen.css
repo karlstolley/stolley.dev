@@ -39,8 +39,8 @@ aside,header,footer {
 
 h1,h2,h3 {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 22.661px;
+  line-height: 30px;
   padding-bottom: 12px;
 }
 
@@ -90,7 +90,10 @@ blockquote p {
   padding: 24px;
 }
 
-
+.latest > li,
+.archive > li {
+  padding-bottom: 72px;
+}
 
 
 
