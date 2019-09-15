@@ -110,7 +110,7 @@ pre {
   background: #DDD;
 }
 pre {
-  margin: 12px -24px;
+  margin: 0px -24px 12px -24px;
   padding: 12px 24px;
   color: #EEE; /* For dark code examples -> TODO: fix this */
 }
