@@ -1,6 +1,7 @@
 ---
 title: Archive
 permalink: /archive/
+layout: listing
 ---
 
 <ul class="archive">

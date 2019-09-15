@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: listing
 ---
 
 <ul class="latest">
