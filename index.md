@@ -1,7 +1,7 @@
 ---
 ---
 
-<ul>
+<ul class="latest">
 {% for post in site.posts limit:10 %}
   <li>
     <article class="{{ post.categories }}">
