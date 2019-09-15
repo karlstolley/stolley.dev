@@ -14,7 +14,7 @@ permalink: /archive/
       <ul>
   {% endif %}
       <li>
-        [{{ post.categories | join: " " | capitalize }}] <a href="{{ post.url }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+        [{{ post.categories | join: " " | capitalize }}] <a href="{{ post.url }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</a>
       </li>
   {% capture last_header %}{{ post.date | date: "%B %Y" }}{% endcapture %}
 {% endfor %}
