@@ -70,12 +70,14 @@ a {
 
 blockquote {
   color: #555;
-  padding: 2px 0 10px 0;
+  padding: 0 0 12px 0;
   font-weight: 400;
 }
 blockquote p {
-  border-left: 2px solid #BBB;
-  padding: 4px 0 8px 10px;
+  border-left: 4px solid #BBB;
+  background: #DDD;
+  margin-left: -14px;
+  padding: 6px 0 6px 10px;
 }
 
 #header,
