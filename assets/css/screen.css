@@ -67,6 +67,20 @@ a {
   color: #225599;
   text-decoration: none;
 }
+b,strong {
+  font-weight: bold;
+}
+cite,em,i {
+  font-style: italic;
+}
+ol:not([class]) li {
+  list-style-type: decimal;
+  padding-bottom: 6px;
+}
+ul:not([class]) li {
+  list-style-type: disc;
+  padding-bottom: 6px;
+}
 
 blockquote {
   color: #555;
