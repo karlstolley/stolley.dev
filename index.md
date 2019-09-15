@@ -20,4 +20,5 @@ layout: listing
     </article>
   </li>
 {% endfor %}
+  <li><a href="/archive/">Archive of All Posts</a></li>
 </ul>
