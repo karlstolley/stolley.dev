@@ -73,6 +73,11 @@ b,strong {
 cite,em,i {
   font-style: italic;
 }
+
+ol:not([class]),
+ul:not([class]) {
+  padding-bottom: 6px;
+}
 ol:not([class]) li {
   list-style-type: decimal;
   padding-bottom: 6px;
