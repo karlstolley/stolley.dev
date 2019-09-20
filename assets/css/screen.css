@@ -22,12 +22,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   700: bold + italic
 */
 
+/* CSS Variables (aka Custom Properties) =================================== */
+
+:root {
+  --color-background: #EEE;
+  --color-foreground: #222;
+  --color-shaded-background: #DDD;
+  --color-shaded-foreground: #555;
+  --color-shaded-border: #BBB;
+  --color-accent-primary: #225599;
+}
 
 /* Foundational Styles ===================================================== */
 
 html {
-  background: #EEE;
-  color: #222;
+/*background: #EEE; */
+  background: var(--color-background);
+/*color: #222; */
+  color: var(--color-foreground);
   /* TODO: Add fallback families */
   font-family: benton-sans, serif;
   font-size: 17px;
@@ -51,13 +63,16 @@ p {
 }
 
 blockquote {
-  color: #555;
+/*color: #555; */
+  color: var(--color-shaded-foreground);
   font-weight: 400;
   padding: 0 0 12px 0;
 }
 blockquote p {
-  background: #DDD;
-  border-left: 4px solid #BBB;
+/*background: #DDD; */
+  background: var(--color-shaded-background);
+/*border-left: 4px solid #BBB; */
+  border-left: 4px solid var(--color-shaded-border);
   margin: 0 -14px;
   padding: 6px 4px 6px 10px;
 }
@@ -83,7 +98,8 @@ ul:not([class]) li {
 /* Inline Text Styles ====================================================== */
 
 a {
-  color: #225599;
+/*color: #225599; */
+  color: var(--color-accent-primary);
   text-decoration: none;
 }
 
@@ -133,7 +149,8 @@ cite,em,i {
 
 code,
 pre {
-  background: #DDD;
+/*background: #DDD; */
+  background: var(--color-shaded-background);
   font-family: Menlo, Monaco, Consolas, 'Courier New', Courier, monospace;
   font-size: 0.9411764706; /* 16px */
   font-style: normal;
