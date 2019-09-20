@@ -8,10 +8,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
-/* Global TODO:
-    * Relative-unit conversions
-*/
-
 /*
   Benton Style & Weight Reference
   (Audited 9/20/2019)
@@ -33,10 +29,6 @@ html {
   font-size: 17px;
   line-height: 24px;
   text-rendering: optimizeLegibility;
-}
-
-aside,header,footer {
-
 }
 
 h1,h2,h3 {
@@ -265,23 +257,22 @@ pre[class*="language-"] {
 */
 
 .g body {
-    position: relative;
+  position: relative;
 }
 
 .g body::after {
-    background: url('data:image/svg+xml;utf8,<svg height="24" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
-
-    content: "";
-    display: block;
-    pointer-events: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
-    position: absolute;
+  background: url('data:image/svg+xml;utf8,<svg height="24" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  content: "";
+  display: block;
+  pointer-events: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  position: absolute;
 }
 
 .g body:active::after {
-    display: none;
+  display: none;
 }
