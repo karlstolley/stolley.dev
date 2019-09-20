@@ -21,3 +21,9 @@ defaults:
 permalink: /:categories/:title/
 
 highlighter: using_prism_thanks
+
+exclude:
+  - backstop_data
+  - backstop.json
+  - Rakefile
+  - Gemfile*
