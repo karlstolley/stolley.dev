@@ -6,7 +6,9 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-/* Begin site styles below */
+/* ========================================================================= */
+/* Begin custom site styles below */
+/* ========================================================================= */
 
 /*
   Benton Style & Weight Reference
@@ -20,6 +22,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   700: bold + italic
 */
 
+
+/* Foundational Styles ===================================================== */
+
 html {
   background: #EEE;
   color: #222;
@@ -31,12 +36,82 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+
+/* Heading, Paragraph, & List Styles ======================================= */
+
 h1,h2,h3 {
   font-size: 22.661px;
   font-weight: 700;
   line-height: 30px;
   padding-bottom: 12px;
 }
+
+p {
+  padding-bottom: 12px;
+}
+
+blockquote {
+  color: #555;
+  font-weight: 400;
+  padding: 0 0 12px 0;
+}
+blockquote p {
+  background: #DDD;
+  border-left: 4px solid #BBB;
+  margin: 0 -14px;
+  padding: 6px 4px 6px 10px;
+}
+
+ol:not([class]),
+ul:not([class]) {
+  padding-bottom: 6px;
+}
+ol:not([class]) li {
+  list-style-type: decimal;
+  padding-bottom: 6px;
+}
+ul:not([class]) li {
+  list-style-type: disc;
+  padding-bottom: 6px;
+}
+.latest > li,
+.archive > li {
+  padding-bottom: 72px;
+}
+
+
+/* Inline Text Styles ====================================================== */
+
+a {
+  color: #225599;
+  text-decoration: none;
+}
+
+b,strong {
+  font-weight: bold;
+}
+
+cite,em,i {
+  font-style: italic;
+}
+
+
+/* Landmark Styles ========================================================= */
+
+#header,
+#footer {
+  padding: 36px 24px 12px 24px;
+}
+#footer {
+  border: 0;
+}
+#content,
+#about {
+  padding: 24px;
+}
+
+
+/* Landmark Contextual Styles ============================================== */
 
 #header h1 {
   font-weight: 500;
@@ -53,66 +128,9 @@ h1,h2,h3 {
   padding-bottom: 0;
 }
 
-p {
-  padding-bottom: 12px;
-}
 
-a {
-  color: #225599;
-  text-decoration: none;
-}
-b,strong {
-  font-weight: bold;
-}
-cite,em,i {
-  font-style: italic;
-}
+/* Styles for Source-code Examples ========================================= */
 
-ol:not([class]),
-ul:not([class]) {
-  padding-bottom: 6px;
-}
-ol:not([class]) li {
-  list-style-type: decimal;
-  padding-bottom: 6px;
-}
-ul:not([class]) li {
-  list-style-type: disc;
-  padding-bottom: 6px;
-}
-
-blockquote {
-  color: #555;
-  font-weight: 400;
-  padding: 0 0 12px 0;
-}
-blockquote p {
-  background: #DDD;
-  border-left: 4px solid #BBB;
-  margin: 0 -14px;
-  padding: 6px 4px 6px 10px;
-}
-
-#header,
-#footer {
-  padding: 36px 24px 12px 24px;
-}
-#footer {
-  border: 0;
-}
-#content,
-#about {
-  padding: 24px;
-}
-
-.latest > li,
-.archive > li {
-  padding-bottom: 72px;
-}
-
-
-
-/* Styles for Source-code Examples */
 code,
 pre {
   background: #DDD;
@@ -130,6 +148,12 @@ pre {
 pre code {
   background: inherit;
 }
+
+
+/* ========================================================================= */
+/* End custom site styles */
+/* ========================================================================= */
+
 
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript+bash+ruby+git+json */
