@@ -32,7 +32,22 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --color-shaded-border: #BBB;
   --color-accent-primary: #225599;
 }
-
+/* For older browsers or light users who want the dark theme */
+[data-theme="dark"] {
+  --color-background: #222;
+  --color-foreground: #EEE;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #222;
+    --color-foreground: #EEE;
+  }
+  /* For dark users who want the light theme */
+  [data-theme="light"] {
+    --color-background: #EEE;
+    --color-foreground: #222;
+  }
+}
 /* Foundational Styles ===================================================== */
 
 html {
