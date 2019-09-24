@@ -24,7 +24,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* CSS Variables (aka Custom Properties) =================================== */
 
-:root {
+/*
+  It's trendy to use :root to set global variables, but as a pseudo-
+  selector, :root has the same specicifity as a class. Equally trendy on
+  theme-switching examples is to use data attributes and the attribute
+  selector. But I prefer the simplicity of a humble, old-school class
+  selector.
+*/
+
+/*
+  Default light theme, with a class for dark users who want to switch to the
+  light theme.
+*/
+html,
+.light {
   --color-background: #EEE;
   --color-foreground: #222;
   --color-shaded-background: #DDD;
@@ -32,22 +45,32 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   --color-shaded-border: #BBB;
   --color-accent-primary: #225599;
 }
-/* For older browsers or light users who want the dark theme */
-[data-theme="dark"] {
+
+/* For older browsers or light users who want to switch to the dark theme */
+.dark {
   --color-background: #222;
   --color-foreground: #EEE;
 }
+
+/* Newfangled media query to deliver the dark theme to users who so prefer */
 @media screen and (prefers-color-scheme: dark) {
-  :root {
+  /*
+    While this autmoatically applies the dark theme for users whose
+    preferences and browser support dark mode, there is the disadvantage
+    of having to duplicate the `.dark` variables above. I fully supports
+    delivering as much design as possible without JavaScript, this kind
+    of duplication makes a pretty strong case for leaning more heavily
+    on `window.matchMedia` and handling all theme-establishing and
+    -switching logic in JavaScript itself. That said, it would be
+    interesting to test the performance of the media query in CSS versus
+    `window.matchMedia` in JavaScript.
+  */
+  html {
     --color-background: #222;
     --color-foreground: #EEE;
   }
-  /* For dark users who want the light theme */
-  [data-theme="light"] {
-    --color-background: #EEE;
-    --color-foreground: #222;
-  }
 }
+
 /* Foundational Styles ===================================================== */
 
 html {
