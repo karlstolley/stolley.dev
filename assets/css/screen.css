@@ -274,28 +274,36 @@ pre[class*="language-"] {
   color: var(--color-p-base-comments);
 }
 .token.bold,
-.token.important,
 .token.punctuation {
   color: var(--color-p-base-emphasis);
 }
 
 .token.doctype,
-.token.cdata {
+.token.cdata,
+.token.atrule .token.rule {
   color: #859900; /* green */
 }
-.token.tag {
+.token.tag,
+.token.selector {
   color: #d33682; /* magenta */
 }
 .token.attr-value,
-.token.attr-value .token.punctuation + .punctuation {
+.token.attr-value .token.punctuation + .punctuation,
+.token.string {
   color: #268bd2; /* blue */
 }
 .token.attr-name,
-.token.attr-value .token.punctuation {
+.token.attr-value .token.punctuation,
+.token.property {
   color: #6c71c4; /* violet */
 }
-.token.entity {
+.token.entity,
+.token.important {
   color: #dc322f; /* red */
+}
+.token.atrule,
+.token.function {
+  color: #cb4b16; /* orange */
 }
 
 .colors-to-hold-onto {
