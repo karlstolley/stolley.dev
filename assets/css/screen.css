@@ -280,11 +280,14 @@ pre[class*="language-"] {
 
 .token.doctype,
 .token.cdata,
-.token.atrule .token.rule {
+.token.atrule .token.rule,
+.token.operator {
   color: #859900; /* green */
 }
 .token.tag,
-.token.selector {
+.token.selector,
+.token.boolean,
+.token.number {
   color: #d33682; /* magenta */
 }
 .token.attr-value,
@@ -304,6 +307,15 @@ pre[class*="language-"] {
 .token.atrule,
 .token.function {
   color: #cb4b16; /* orange */
+}
+
+.token.keyword {
+  color: #cb4b16; /* orange */
+  color: #6c71c4; /* violet */
+}
+
+.token.regex {
+  color: #b58900; /* yellow */
 }
 
 .colors-to-hold-onto {
