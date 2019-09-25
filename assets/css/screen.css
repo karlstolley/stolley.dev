@@ -44,12 +44,22 @@ html,
   --color-shaded-foreground: #555;
   --color-shaded-border: #BBB;
   --color-accent-primary: #225599;
+  --color-p-base-emphasis: #586e75;
+  --color-p-base-body: #657b83;
+  --color-p-base-comments: #93a1a1;
+  --color-p-base-background: #fdf6e3;
+  --color-p-base-background-highlight: #eee8d5;
 }
 
 /* For older browsers or light users who want to switch to the dark theme */
 .dark {
   --color-background: #222;
   --color-foreground: #EEE;
+  --color-p-base-emphasis: #93a1a1;
+  --color-p-base-body: #839496;
+  --color-p-base-comments: #586e75;
+  --color-p-base-background: #002b36;
+  --color-p-base-background-highlight: #073642;
 }
 
 /* Newfangled media query to deliver the dark theme to users who so prefer */
@@ -68,6 +78,13 @@ html,
   html {
     --color-background: #222;
     --color-foreground: #EEE;
+    --color-background: #222;
+    --color-foreground: #EEE;
+    --color-p-base-emphasis: #93a1a1;
+    --color-p-base-body: #839496;
+    --color-p-base-comments: #586e75;
+    --color-p-base-background: #002b36;
+    --color-p-base-background-highlight: #073642;
   }
 }
 
@@ -188,13 +205,13 @@ cite,em,i {
 code,
 pre {
 /*background: #DDD; */
-  background: var(--color-shaded-background);
+  background: var(--color-p-base-background);
+  color: var(--color-p-base-body);
   font-family: Menlo, Monaco, Consolas, 'Courier New', Courier, monospace;
   font-size: 0.9411764706; /* 16px */
   font-style: normal;
   font-weight: normal;
   padding: 0 0.25em 0 0.25em; /* 4px */
-  color: inherit;
 }
 pre {
   margin: 0px -24px 12px -24px;
@@ -243,7 +260,6 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #2d2d2d;
 }
 
 /* Inline code */
