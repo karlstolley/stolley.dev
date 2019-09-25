@@ -267,7 +267,9 @@ pre[class*="language-"] {
   white-space: normal;
 }
 
-.language-json .token.property {
+.language-json .token.property,
+.language-bash .token.number,
+.language-bash .token.string {
   color: var(--color-p-base-body);
 }
 
@@ -289,7 +291,8 @@ pre[class*="language-"] {
 .token.symbol,
 .token.method-definition .token.function,
 .language-json .token.boolean,
-.language-json .token.number {
+.language-json .token.number,
+.language-git .token.parameter {
   color: #859900; /* green */
 }
 .token.tag,
@@ -320,7 +323,8 @@ pre[class*="language-"] {
 }
 .token.atrule,
 .token.function,
-.language-ruby .token.keyword {
+.language-ruby .token.keyword,
+.token.command {
   color: #cb4b16; /* orange */
 }
 
