@@ -282,7 +282,8 @@ pre[class*="language-"] {
 .token.cdata,
 .token.atrule .token.rule,
 .token.operator,
-.token.symbol {
+.token.symbol,
+.token.method-definition .token.function {
   color: #859900; /* green */
 }
 .token.tag,
@@ -312,9 +313,11 @@ pre[class*="language-"] {
   color: #dc322f; /* red */
 }
 .token.atrule,
-.token.function {
+.token.function,
+.language-ruby .token.keyword {
   color: #cb4b16; /* orange */
 }
+
 
 .token.keyword {
   color: #cb4b16; /* orange */
