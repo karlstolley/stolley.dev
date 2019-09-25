@@ -267,6 +267,10 @@ pre[class*="language-"] {
   white-space: normal;
 }
 
+.language-json .token.property {
+  color: var(--color-p-base-body);
+}
+
 .token.comment,
 .token.block-comment,
 .token.prolog,
@@ -283,7 +287,9 @@ pre[class*="language-"] {
 .token.atrule .token.rule,
 .token.operator,
 .token.symbol,
-.token.method-definition .token.function {
+.token.method-definition .token.function,
+.language-json .token.boolean,
+.language-json .token.number {
   color: #859900; /* green */
 }
 .token.tag,
@@ -324,7 +330,8 @@ pre[class*="language-"] {
   color: #6c71c4; /* violet */
 }
 
-.token.regex {
+.token.regex,
+.language-json .token.operator {
   color: #b58900; /* yellow */
 }
 
