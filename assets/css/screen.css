@@ -267,6 +267,8 @@ pre[class*="language-"] {
   white-space: normal;
 }
 
+/* TODO: Alphabetize and sort these */
+
 .language-json .token.property,
 .language-bash .token.number,
 .language-bash .token.string {
@@ -279,6 +281,7 @@ pre[class*="language-"] {
 .token.cdata {
   color: var(--color-p-base-comments);
 }
+
 .token.bold,
 .token.punctuation {
   color: var(--color-p-base-emphasis);
@@ -309,18 +312,22 @@ pre[class*="language-"] {
 .token.attr-name,
 .token.attr-value .token.punctuation,
 .token.property,
+.token.keyword,
 .language-ruby .token.number {
   color: #6c71c4; /* violet */
 }
+
 .token.boolean,
 .token.number,
 .token.variable {
   color: #2aa198; /* cyan */
 }
+
 .token.entity,
 .token.important {
   color: #dc322f; /* red */
 }
+
 .token.atrule,
 .token.function,
 .language-ruby .token.keyword,
@@ -328,22 +335,9 @@ pre[class*="language-"] {
   color: #cb4b16; /* orange */
 }
 
-
-.token.keyword {
-  color: #cb4b16; /* orange */
-  color: #6c71c4; /* violet */
-}
-
 .token.regex,
 .language-json .token.operator {
   color: #b58900; /* yellow */
-}
-
-.colors-to-hold-onto {
-  color: #cb4b16; /* orange */
-  color: #6c71c4; /* violet */
-  color: #2aa198; /* cyan */
-  color: #268bd2; /* blue */
 }
 
 .token.important,
