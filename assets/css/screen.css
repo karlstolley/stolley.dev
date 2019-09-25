@@ -281,13 +281,14 @@ pre[class*="language-"] {
 .token.doctype,
 .token.cdata,
 .token.atrule .token.rule,
-.token.operator {
+.token.operator,
+.token.symbol {
   color: #859900; /* green */
 }
 .token.tag,
 .token.selector,
-.token.boolean,
-.token.number {
+.token.class-name,
+.token.constant {
   color: #d33682; /* magenta */
 }
 .token.attr-value,
@@ -297,8 +298,14 @@ pre[class*="language-"] {
 }
 .token.attr-name,
 .token.attr-value .token.punctuation,
-.token.property {
+.token.property,
+.language-ruby .token.number {
   color: #6c71c4; /* violet */
+}
+.token.boolean,
+.token.number,
+.token.variable {
+  color: #2aa198; /* cyan */
 }
 .token.entity,
 .token.important {
