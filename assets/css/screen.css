@@ -218,6 +218,7 @@ pre {
   padding: 12px 24px;
 }
 pre code {
+  padding: 0;
   background: inherit;
 }
 
