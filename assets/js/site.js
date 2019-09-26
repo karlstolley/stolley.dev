@@ -1,24 +1,28 @@
-var toggle = document.querySelector('#mode');
-var html = document.querySelector('html');
+function themeSwitcher() {
+  var toggle = document.querySelector('#mode');
+  var html = document.querySelector('html');
 
-var dark_mode = false;
-var modes = ['light','dark'];
+  var dark_mode = false;
+  var modes = ['light','dark'];
 
-if (typeof window.matchMedia !== 'undefined') {
-  dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (typeof window.matchMedia !== 'undefined') {
+    dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  if (dark_mode) {
+    modes.reverse(); // ['dark','light']
+  }
+
+  html.classList.add(modes[0]);
+
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    html.classList.replace(modes[0],modes[1]);
+    modes.reverse();
+  });
 }
 
-if (dark_mode) {
-  modes.reverse(); // ['dark','light']
-}
-
-html.classList.add(modes[0]);
-
-toggle.addEventListener('click', function(e) {
-  e.preventDefault();
-  html.classList.replace(modes[0],modes[1]);
-  modes.reverse();
-});
+themeSwitcher();
 
 /* PrismJS 1.17.1
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json */
