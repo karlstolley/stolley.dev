@@ -1,3 +1,16 @@
+function storageAvailable(type) {
+  try {
+    var storage = window[type];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }
+  catch(e) {
+    return false;
+  }
+}
+
 function themeSwitcher() {
   var toggle = document.querySelector('#mode');
   var html = document.querySelector('html');
@@ -7,10 +20,17 @@ function themeSwitcher() {
 
   if (typeof window.matchMedia !== 'undefined') {
     dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (dark_mode) {
+      modes.reverse(); // ['dark','light']
+    }
   }
 
-  if (dark_mode) {
-    modes.reverse(); // ['dark','light']
+  if (storageAvailable('localStorage')) {
+    if (!localStorage.getItem('modes')) {
+      localStorage.setItem('modes',modes.join(','));
+    } else {
+      modes = localStorage.getItem('modes').split(',');
+    }
   }
 
   html.classList.add(modes[0]);
@@ -19,6 +39,9 @@ function themeSwitcher() {
     e.preventDefault();
     html.classList.replace(modes[0],modes[1]);
     modes.reverse();
+    if (storageAvailable('localStorage')) {
+      localStorage.setItem('modes',modes.join(','));
+    }
   });
 }
 
