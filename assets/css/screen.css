@@ -35,15 +35,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*
   Default light theme, with a class for dark users who want to switch to the
   light theme.
+
+  Reversible background/foreground colors derived from Solarized theme,
+  https://ethanschoonover.com/solarized/
 */
 html,
 .light {
-  --color-background: #EEE;
-  --color-foreground: #222;
-  --color-shaded-background: #DDD;
-  --color-shaded-foreground: #555;
-  --color-shaded-border: #BBB;
-  --color-accent-primary: #225599;
+  --color-background: #fffbf0;
+  --color-foreground: #00161c;
+  --color-shaded-background: #eee8d5;
+  --color-shaded-foreground: #002b36;
+  --color-shaded-border: #657b83;
+  --color-accent-primary: #2076b3;
   --color-p-base-emphasis: #586e75;
   --color-p-base-body: #657b83;
   --color-p-base-comments: #93a1a1;
@@ -53,8 +56,12 @@ html,
 
 /* For older browsers or light users who want to switch to the dark theme */
 .dark {
-  --color-background: #222;
-  --color-foreground: #EEE;
+  --color-background: #00161c;
+  --color-foreground: #fdf6e3;
+  --color-shaded-background: #002b36;
+  --color-shaded-foreground: #fdf6e3;
+  --color-shaded-border: #657b83;
+  --color-accent-primary: #cb4b16;
   --color-p-base-emphasis: #93a1a1;
   --color-p-base-body: #839496;
   --color-p-base-comments: #586e75;
@@ -76,10 +83,12 @@ html,
     `window.matchMedia` in JavaScript.
   */
   html {
-    --color-background: #222;
-    --color-foreground: #EEE;
-    --color-background: #222;
-    --color-foreground: #EEE;
+    --color-background: #00161c;
+    --color-foreground: #fdf6e3;
+    --color-shaded-background: #002b36;
+    --color-shaded-foreground: #fdf6e3;
+    --color-shaded-border: #657b83;
+    --color-accent-primary: #cb4b16;
     --color-p-base-emphasis: #93a1a1;
     --color-p-base-body: #839496;
     --color-p-base-comments: #586e75;
