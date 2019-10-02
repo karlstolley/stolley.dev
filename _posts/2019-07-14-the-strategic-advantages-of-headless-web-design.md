@@ -1,0 +1,16 @@
+---
+title: The Strategic Advantages of Headless Web Design
+link: https://www.sitepoint.com/headless-web-design-strategic-advantage/
+category: linked
+---
+
+Gal Shachar checks in with this burning missive.
+
+> A truly headless CMS eliminates the head portion altogether, leaving just the back end. In other
+> words, there’s no dedicated system for front-end presentation. And while you might initially
+> wonder if this type of structure might be to your disadvantage, it’s actually the best way to
+> display content to your site visitors on all devices and interfaces, putting your agency in the
+> best possible position to scale.
+
+A good overview of alternative CMS-oriented web strategies. But headless introduces new problems
+for content wholly decoupled from the web. HTML has a job to do, and it does it well.
