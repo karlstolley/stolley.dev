@@ -12,6 +12,11 @@ function storageAvailable(type) {
 }
 
 function themeSwitcher() {
+  // Exit fast if no CSS properties support
+  if (!('supports' in CSS && CSS.supports("(--foo: bar)"))) {
+    return;
+  }
+
   var footer = document.querySelector('#footer');
   var toggle = document.createElement('a');
   var html = document.querySelector('html');
