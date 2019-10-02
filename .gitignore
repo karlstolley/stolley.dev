@@ -2,6 +2,3 @@ _site/
 .jekyll-metadata
 backstop_data/bitmaps_test
 backstop_data/html_report
-
-# Temporarily ignore content of old test posts
-_posts/2019-07*
