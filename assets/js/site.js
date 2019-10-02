@@ -24,7 +24,7 @@ function themeSwitcher() {
   var dark_mode = false;
   var modes = ['light','dark'];
 
-  if (typeof window.matchMedia !== 'undefined') {
+  if ('matchMedia' in window) {
     dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     if (dark_mode) {
       modes.reverse(); // ['dark','light']
