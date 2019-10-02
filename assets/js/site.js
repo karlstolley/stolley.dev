@@ -12,7 +12,8 @@ function storageAvailable(type) {
 }
 
 function themeSwitcher() {
-  var toggle = document.querySelector('#mode');
+  var footer = document.querySelector('#footer');
+  var toggle = document.createElement('a');
   var html = document.querySelector('html');
 
   var dark_mode = false;
@@ -35,6 +36,11 @@ function themeSwitcher() {
 
   html.classList.add(modes[0]);
 
+  toggle.id = 'mode';
+  toggle.href = '#null';
+  toggle.textContent = 'Switch to ' + modes[1] + ' theme.';
+  footer.appendChild(toggle);
+
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
     html.classList.replace(modes[0],modes[1]);
@@ -42,6 +48,7 @@ function themeSwitcher() {
     if (storageAvailable('localStorage')) {
       localStorage.setItem('modes',modes.join(','));
     }
+    toggle.textContent = 'Switch to ' + modes[1] + ' theme.';
   });
 }
 
