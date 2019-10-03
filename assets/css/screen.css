@@ -229,7 +229,8 @@ pre {
 blockquote code {
   background: inherit;
 }
-header code {
+header code,
+.archive code {
   color: inherit;
   background: inherit;
   padding: 0;
