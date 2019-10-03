@@ -128,7 +128,7 @@ p {
 
 blockquote {
 /*color: #555; */
-  color: var(--color-shaded-foreground);
+  color: var(--color-p-base-body);
   font-weight: 400;
   padding: 0 0 12px 0;
 }
@@ -225,6 +225,14 @@ pre {
 pre {
   margin: 0px -24px 12px -24px;
   padding: 12px 24px;
+}
+blockquote code {
+  background: inherit;
+}
+header code {
+  color: inherit;
+  background: inherit;
+  padding: 0;
 }
 pre code {
   padding: 0;
