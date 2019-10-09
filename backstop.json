@@ -1,5 +1,5 @@
 {
-  "id": "v0",
+  "id": "v01",
   "viewports": [
     {
       "label": "phone",
@@ -25,11 +25,19 @@
     },
     {
       "label": "Linked: Breaking Down the Monolith",
-      "url": "http://localhost:4000/linked/breaking-down-the-monolith-of-git-checkout-in-git-223/"
+      "url": "http://localhost:4000/linked/example-link-post/"
     },
     {
-      "label": "Linked: Optional HTML",
-      "url": "http://localhost:4000/linked/optional-html/"
+      "label": "Post: Test Post",
+      "url": "http://localhost:4000/test-post/"
+    },
+    {
+      "label": "Post: Lorem Ipsum",
+      "url": "http://localhost:4000/lorem-ipsum/"
+    },
+    {
+      "label": "Post: Syntax Highlighting",
+      "url": "http://localhost:4000/syntax/"
     },
     {
       "label": "TEMPORARY Post: Test Post",
