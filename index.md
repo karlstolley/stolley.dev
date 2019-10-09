@@ -3,7 +3,7 @@ layout: listing
 ---
 
 <ul class="latest">
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:5 %}
   <li>
     <article class="{{ post.categories }}">
       <header>
