@@ -40,8 +40,40 @@
       "url": "http://localhost:4000/syntax/"
     },
     {
-      "label": "TEMPORARY Post: Test Post",
-      "url": "http://localhost:4000/test-post/"
+      "label": "DARK Stolley.dev Homepage",
+      "url": "http://localhost:4000/",
+      "clickSelector": "#footer a#mode",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "DARK Stolley.dev Archive",
+      "url": "http://localhost:4000/archive/",
+      "clickSelector": "#footer a#mode",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "DARK Linked: Breaking Down the Monolith",
+      "url": "http://localhost:4000/linked/example-link-post/",
+      "clickSelector": "#footer a#mode",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "DARK Post: Test Post",
+      "url": "http://localhost:4000/test-post/",
+      "clickSelector": "#footer a#mode",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "DARK Post: Lorem Ipsum",
+      "url": "http://localhost:4000/lorem-ipsum/",
+      "clickSelector": "#footer a#mode",
+      "postInteractionWait": 1000
+    },
+    {
+      "label": "DARK Post: Syntax Highlighting",
+      "url": "http://localhost:4000/syntax/",
+      "clickSelector": "#footer a#mode",
+      "postInteractionWait": 1000
     }
   ],
   "paths": {
