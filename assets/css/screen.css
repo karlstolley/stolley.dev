@@ -42,7 +42,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html,
 .light {
   --color-background: #fffbf0;
-  --color-foreground: #00161c;
+  --color-foreground: #001f27;
   --color-shaded-background: #eee8d5;
   --color-shaded-foreground: #002b36;
   --color-shaded-border: #657b83;
@@ -56,7 +56,7 @@ html,
 
 /* For older browsers or light users who want to switch to the dark theme */
 .dark {
-  --color-background: #00161c;
+  --color-background: #001f27;
   --color-foreground: #fdf6e3;
   --color-shaded-background: #002b36;
   --color-shaded-foreground: #fdf6e3;
@@ -83,7 +83,7 @@ html,
     `window.matchMedia` in JavaScript.
   */
   html {
-    --color-background: #00161c;
+    --color-background: #001f27;
     --color-foreground: #fdf6e3;
     --color-shaded-background: #002b36;
     --color-shaded-foreground: #fdf6e3;
