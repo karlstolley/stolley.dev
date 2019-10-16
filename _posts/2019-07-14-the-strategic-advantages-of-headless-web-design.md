@@ -4,7 +4,7 @@ link: https://www.sitepoint.com/headless-web-design-strategic-advantage/
 category: linked
 ---
 
-Gal Shachar checks in with this burning missive.
+Gal Shachar is offering the hard sell on headless content management systems:
 
 > A truly headless CMS eliminates the head portion altogether, leaving just the back end. In other
 > words, there’s no dedicated system for front-end presentation. And while you might initially
