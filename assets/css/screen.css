@@ -190,7 +190,52 @@ cite,em,i {
   padding: 24px;
 }
 
+@media screen and (min-width: 540px) {
+  #header,
+  #footer,
+  #content,
+  #about {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 660px) {
+  #header,
+  #footer,
+  #content,
+  #about {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media screen and (min-width: 820px) {
+  #header,
+  #footer,
+  #content,
+  #about {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #header,
+  #footer {
+    padding-top: 72px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #header,
+  #footer,
+  #content,
+  #about {
+    padding-right: 30%;
+  }
+}
 
+@media screen and (min-width: 1100px) {
+  html {
+    font-size: 19px;
+  }
+}
 /* Landmark Contextual Styles ============================================== */
 
 #header h1 {
