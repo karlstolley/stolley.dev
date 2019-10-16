@@ -150,7 +150,7 @@ ol:not([class]) li {
   padding-bottom: 6px;
 }
 ul:not([class]) li {
-  list-style-type: disc;
+  list-style-type: circle;
   padding-bottom: 6px;
 }
 .latest > li,
