@@ -2,6 +2,7 @@
 title: Syntax Highlighting
 category: post
 permalink: /syntax/
+date: 2039-11-27
 ---
 
 Here's some HTML:

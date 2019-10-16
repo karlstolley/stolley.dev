@@ -2,6 +2,7 @@
 title: Just a Little Test Post
 category: post
 permalink: /test-post/
+date: 2039-11-28
 ---
 
 It is a post. How about its list features?
