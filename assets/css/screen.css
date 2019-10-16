@@ -190,7 +190,8 @@ cite,em,i {
   padding: 1.4117647059em /* 24px */ 24px;
 }
 
-@media screen and (min-width: 540px) {
+/* 540px */
+@media screen and (min-width: 33.75em) {
   #header,
   #footer,
   #content,
@@ -199,7 +200,8 @@ cite,em,i {
     padding-right: 10%;
   }
 }
-@media screen and (min-width: 660px) {
+/* 660px */
+@media screen and (min-width: 41.25em) {
   #header,
   #footer,
   #content,
@@ -208,7 +210,8 @@ cite,em,i {
     padding-right: 15%;
   }
 }
-@media screen and (min-width: 820px) {
+/* 820px */
+@media screen and (min-width: 51.25em) {
   #header,
   #footer,
   #content,
@@ -222,7 +225,8 @@ cite,em,i {
     padding-bottom: 1.4117647059em; /* 24px */
   }
 }
-@media screen and (min-width: 1000px) {
+/* 1000px */
+@media screen and (min-width: 62.5em) {
   #header,
   #footer,
   #content,
@@ -230,8 +234,8 @@ cite,em,i {
     padding-right: 30%;
   }
 }
-
-@media screen and (min-width: 1200px) {
+/* 1200px */
+@media screen and (min-width: 75em) {
   html {
     font-size: 1.25em;
   }
