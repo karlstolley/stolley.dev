@@ -106,9 +106,9 @@ html {
   color: var(--color-foreground);
   /* TODO: Add fallback families */
   font-family: benton-sans, serif;
-  font-size: 17px;
+  font-size: 1.0625em; /* 17px */
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.4117647059em; /* 24px */
   text-rendering: optimizeLegibility;
 }
 
@@ -116,21 +116,21 @@ html {
 /* Heading, Paragraph, & List Styles ======================================= */
 
 h1,h2,h3 {
-  font-size: 22.661px;
+  font-size: 1.333em; /* 22.661px */
   font-weight: 700;
-  line-height: 30px;
-  padding-bottom: 12px;
+  line-height: 1.3238603769em; /* 30px */
+  padding-bottom: 0.5295441507em; /*12px */
 }
 
 p {
-  padding-bottom: 12px;
+  padding-bottom: 0.7058823529em; /* 12px */
 }
 
 blockquote {
   color: #657b83;
   color: var(--color-p-base-body);
   font-weight: 400;
-  padding: 0 0 12px 0;
+  padding: 0 0 0.7058823529em /* 12px */ 0;
 }
 blockquote p {
   background: #eee8d5;
@@ -138,24 +138,24 @@ blockquote p {
   border-left: 4px solid #657b83;
   border-left: 4px solid var(--color-shaded-border);
   margin: 0 -14px;
-  padding: 6px 4px 6px 10px;
+  padding: 0.3529411765em /* 6px */ 4px 0.3529411765em 10px;
 }
 
 ol:not([class]),
 ul:not([class]) {
-  padding-bottom: 6px;
+  padding-bottom: 0.3529411765em; /* 6px */
 }
 ol:not([class]) li {
   list-style-type: decimal;
-  padding-bottom: 6px;
+  padding-bottom: 0.3529411765em; /* 6px */
 }
 ul:not([class]) li {
   list-style-type: circle;
-  padding-bottom: 6px;
+  padding-bottom: 0.3529411765em; /* 6px */
 }
 .latest > li,
 .archive > li {
-  padding-bottom: 72px;
+  padding-bottom: 4.2352941176em; /* 72px */
 }
 
 
@@ -180,14 +180,14 @@ cite,em,i {
 
 #header,
 #footer {
-  padding: 36px 24px 12px 24px;
+  padding: 2.1176470588em /* 36px */ 24px 0.7058823529em /* 12px */ 24px;
 }
 #footer {
   border: 0;
 }
 #content,
 #about {
-  padding: 24px;
+  padding: 1.4117647059em /* 24px */ 24px;
 }
 
 @media screen and (min-width: 540px) {
@@ -218,8 +218,8 @@ cite,em,i {
   }
   #header,
   #footer {
-    padding-top: 72px;
-    padding-bottom: 24px;
+    padding-top: 4.2352941176em; /* 72px */
+    padding-bottom: 1.4117647059em; /* 24px */
   }
 }
 @media screen and (min-width: 1000px) {
@@ -243,13 +243,13 @@ cite,em,i {
 }
 
 #content header {
-  padding-bottom: 24px;
+  padding-bottom: 1.4117647059em; /* 24px */
 }
 
 #content h1 {
   font-family: benton-sans-condensed;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 1.7647058824em; /* 30px */
+  line-height: 0.8333333333em; /*36px */
   padding-bottom: 0;
 }
 
