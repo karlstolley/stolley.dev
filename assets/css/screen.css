@@ -105,7 +105,7 @@ html {
   color: #001f27;
   color: var(--color-foreground);
   /* TODO: Add fallback families */
-  font-family: benton-sans, serif;
+  font-family: benton-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size: 1.0625em; /* 17px */
   font-weight: 500;
   line-height: 1.4117647059em; /* 24px */
