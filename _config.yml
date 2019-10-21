@@ -18,6 +18,8 @@ defaults:
     values:
       layout: "linked"
 
+url: stolley.dev
+
 permalink: /:categories/:title/
 
 highlighter: using_prism_thanks
