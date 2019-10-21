@@ -25,6 +25,10 @@ layout: null
         <name>Karl Stolley</name>
         <uri>https://stolley.dev/</uri>
       </author>
+      {% if post.tags.size > 1 %}
+        {% assign post_tags = post.tags | join: ", " | remove: "devto, " %}
+        <categories>{{ post_tags }}</categories>
+      {% endif %}
       <content type="html" xml:lang="en"><![CDATA[
       {{ post.content }}
       ]]></content>
