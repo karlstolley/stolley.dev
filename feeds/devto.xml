@@ -1,0 +1,35 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>stolley.dev: Linked Posts</title>
+  <link href="{{ site.url }}/feeds/linked.xml" rel="self"/>
+  <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/feeds/all.xml</id>
+  <author>
+    <name>Karl Stolley</name>
+    <uri>https://stolley.dev/</uri>
+  </author>
+
+  {% for post in site.posts %}
+    {% if post.tags.first == 'devto' %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="{{ site.url }}{{ post.url }}" rel="alternate"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>{{ site.url }}{{ post.url }}</id>
+      <author>
+        <name>Karl Stolley</name>
+        <uri>https://stolley.dev/</uri>
+      </author>
+      <content type="html" xml:lang="en"><![CDATA[
+      {{ post.content }}
+      ]]></content>
+    </entry>
+    {% endif %}
+  {% endfor %}
+
+</feed>
