@@ -4,7 +4,7 @@ link: https://www.w3.org/blog/news/archives/7753
 category: linked
 tags:
   - devto
-  - javascript
+  - html
   - webdev
 ---
 
