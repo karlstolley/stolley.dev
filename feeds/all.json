@@ -1,0 +1,33 @@
+---
+layout: null
+---
+
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "stolley.dev",
+  "home_page_url": "https://stolley.dev/",
+  "feed_url": "https://stolley.dev/feeds/all.json",
+  "author": {
+    "name": "Karl Stolley",
+    "url": "https://stolley.dev/"
+  },
+  "items": [
+    {% for post in site.posts %}
+      {
+        "title": "{{ post.title }}",
+        "date_published": "{{ post.date | date_to_xmlschema }}",
+        "author": {
+          "name": "Karl Stolley"
+        },
+        "id": "{{ site.url }}{{ post.url }}",
+        "url": "{{ site.url }}{{ post.url }}",
+        "content_html": "{{ post.content | replace: '"', '\"' | strip_newlines }}",
+        "content_text": "{{ post.content | strip_html | newline_to_br | replace: '<br />', '\n' | replace: '<br />', ' ' | strip_newlines | escape_once | replace: "&lt;", "<" | replace: "&gt;", ">" | replace: '&quot;', '\"' }}"
+      {% if forloop.last %}
+        }
+      {% else %}
+        },
+      {% endif %}
+    {% endfor %}
+  ]
+}
