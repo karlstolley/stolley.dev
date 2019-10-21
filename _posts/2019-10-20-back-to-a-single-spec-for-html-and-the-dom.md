@@ -2,6 +2,7 @@
 title: Back to a Single Spec for HTML and the DOM
 link: https://www.w3.org/blog/news/archives/7753
 category: linked
+tags: devto
 ---
 
 Coralie Mercer at the World Wide Web Consortium blog, back in May 2019:
