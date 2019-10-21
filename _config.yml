@@ -18,7 +18,7 @@ defaults:
     values:
       layout: "linked"
 
-url: stolley.dev
+url: https://stolley.dev
 
 permalink: /:categories/:title/
 
