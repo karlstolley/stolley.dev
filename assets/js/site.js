@@ -20,6 +20,7 @@ function themeSwitcher() {
   var footer = document.querySelector('#footer');
   var toggle = document.createElement('a');
   var html = document.querySelector('html');
+  var period = '.';
 
   var dark_mode = false;
   var modes = ['light','dark'];
@@ -43,8 +44,9 @@ function themeSwitcher() {
 
   toggle.id = 'mode';
   toggle.href = '#null';
-  toggle.textContent = 'Switch to ' + modes[1] + ' theme.';
+  toggle.textContent = 'Switch to ' + modes[1] + ' theme';
   footer.appendChild(toggle);
+  toggle.insertAdjacentText('afterend', period);
 
   toggle.addEventListener('click', function(e) {
     e.preventDefault();
@@ -53,7 +55,7 @@ function themeSwitcher() {
     if (storageAvailable('localStorage')) {
       localStorage.setItem('modes',modes.join(','));
     }
-    toggle.textContent = 'Switch to ' + modes[1] + ' theme.';
+    toggle.textContent = 'Switch to ' + modes[1] + ' theme';
   });
 }
 
