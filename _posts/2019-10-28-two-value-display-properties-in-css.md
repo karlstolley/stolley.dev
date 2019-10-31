@@ -10,6 +10,7 @@ The incomparable Rachel Andrew introduces the brave new world of two-value CSS `
 > the outer `display` type of an element is always block or inline, and dictates how the box behaves
 > in the normal flow of the document. The inner `display` type then changes the formatting context
 > of the children.
+>
 > To better describe this behavior, the CSS Display specification has been
 > refactored to allow for `display` to accept two values. The first describes whether the outer
 > `display` type is block or inline, whereas the second value describes the formatting of the
