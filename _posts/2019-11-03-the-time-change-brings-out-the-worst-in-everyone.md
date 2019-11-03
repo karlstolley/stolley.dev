@@ -9,10 +9,10 @@ Okay. So first three basic facts with no citations or supporting evidence:
 1. Today marks the *end* of Daylight Saving Time for 2019, for those time zones and areas that
   observe a time-change to begin with.
 2. *Daylight Saving Time* is so written. A student of *The Chicago Manual of Style* would likely put
-  a hyphen there: *Daylight-Saving Time*. The key is that *saving* is verb. *Daylight saving time*
-  is meant to save daylight, meaning that in the longer ends of days of the summer months, the clock
-  is adjusted so that the sun sets later relative to the 24-hour clock. It is not, as the solecistic
-  plural noun-form *savings* would suggest, a sale.
+  a hyphen there: *Daylight-Saving Time*. The key is that *saving* is an adjective. *Daylight saving
+  time* is meant to save daylight, meaning that in the longer ends of days of the summer months, the
+  clock is adjusted so that the sun sets later relative to the 24-hour clock. It is not, as the
+  solecistic plural noun-form *savings* would suggest, a sale.
 3. Today therefore marks the beginning of *Standard Time*.
 
 Which of course means that news outlets of all different stripes are running biannual
