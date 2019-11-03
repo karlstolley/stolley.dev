@@ -26,7 +26,7 @@ with the click-baity title “Daylight saving ends fall 2019: Science says it ma
 takes a flight and jumps a couple of timezones, or many more?)
 
 What I’ve never seen in any of those think pieces, whether arguing for or against a time change, and
-whether for Standard or Daylight-Saving Time, is a even the acknowledgement of the fundamental
+whether for Standard or Daylight-Saving Time, is even the acknowledgement of the fundamental
 problem of just how geographically big time zones are in the continental United States, which is
 split into just four timezones.
 
