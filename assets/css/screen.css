@@ -158,6 +158,23 @@ ul:not([class]) li {
   padding-bottom: 4.2352941176em; /* 72px */
 }
 
+figure {
+  border-top: 1px solid var(--color-p-base-emphasis);
+  padding-top: 11px;
+  margin: 6px 0 18px 0;
+}
+figcaption {
+  font-size: 12.7531882971px;
+  line-height: 18px;
+  color: var(--color-p-base-emphasis);
+  border-bottom: 1px solid var(--color-p-base-emphasis);
+  padding: 6px 6px 6px 6px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
 
 /* Inline Text Styles ====================================================== */
 
@@ -181,6 +198,7 @@ cite,em,i {
 #header,
 #footer {
   padding: 2.1176470588em /* 36px */ 24px 0.7058823529em /* 12px */ 24px;
+  clear: both;
 }
 #footer {
   border: 0;
@@ -224,6 +242,12 @@ cite,em,i {
     padding-top: 4.2352941176em; /* 72px */
     padding-bottom: 1.4117647059em; /* 24px */
   }
+  figure {
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+    margin: 6px -15% 18px 18px;
+  }
 }
 /* 1000px */
 @media screen and (min-width: 62.5em) {
@@ -233,11 +257,17 @@ cite,em,i {
   #about {
     padding-right: 30%;
   }
+  figure {
+    margin-right: -25%;
+  }
 }
 /* 1200px */
 @media screen and (min-width: 75em) {
   html {
     font-size: 1.25em;
+  }
+  figure {
+    margin-right: -50%;
   }
 }
 /* Landmark Contextual Styles ============================================== */
