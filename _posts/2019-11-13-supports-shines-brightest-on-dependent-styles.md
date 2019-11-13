@@ -20,13 +20,13 @@ developers test and immediately apply a newer CSS property:
 ```
 
 But considering that [browsers ignore CSS that they don’t understand](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers#Creating_fallbacks_in_CSS), such applications of
-feature queries can be redundant and unncessary.
+feature queries can be redundant and unnecessary.
 
 <figure class="screenshot" id="img-stolley-co-screenshot">
   <img src="/assets/img/stolley-co-screenshot.png" alt="Screenshot of CSS shapes example" />
   <figcaption>
     CSS shapes enable developers to draw outlines around floated content. Text will flow to conform
-    to the shape, as shown here. The hyphenation and justification, however, is only desirable when
+    to the shape, as shown here. The hyphenation and justification, however, are only desirable when
     CSS shapes are supported.
   </figcaption>
 </figure>
