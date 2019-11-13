@@ -11,7 +11,7 @@ tags:
 Feature queries via [the `@supports` CSS
 at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) provide syntax to conditionally
 apply a set of style declarations when a given feature is supported. It’s common to see web
-developers test and immediately apply a given CSS property:
+developers test and immediately apply a newer CSS property:
 
 ```css
 @supports(display: grid) {
@@ -31,7 +31,7 @@ feature queries can be redundant and unncessary.
   </figcaption>
 </figure>
 
-Where feature queries really shine, however, are in preventing dependent styles from being applied.
+Where feature queries really shine, however, is in preventing dependent styles from being applied.
 Feature queries are exceptionally suited to applying properties browsers *do* understand, but that
 are only appropriate when a more advanced property is available.
 
