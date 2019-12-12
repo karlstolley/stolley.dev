@@ -2,6 +2,9 @@
 title: "Quoting in HTML: Quotations, Citations, and Blockquotes"
 link: https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/
 category: linked
+tags:
+  - devto
+  - html
 ---
 
 John Rhea writes a beautifully detailed article about HTML semantics:
