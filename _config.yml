@@ -2,21 +2,15 @@ defaults:
   -
     scope:
       path: ""
-    values:
-      layout: "basic"
-  -
-    scope:
-      path: ""
       type: "posts"
     values:
       layout: "post"
   -
     scope:
       path: ""
-      type: "posts"
-      category: "linked"
+      type: "pages"
     values:
-      layout: "linked"
+      layout: "basic"
 
 url: https://stolley.dev
 
