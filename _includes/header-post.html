@@ -1,0 +1,6 @@
+<header>
+  <h2>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</h2>
+  <ul class="meta">
+    <li>{{ page.date | date: "%-d %B %Y" }}</li>
+  </ul>
+</header>

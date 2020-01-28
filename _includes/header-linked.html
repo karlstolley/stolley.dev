@@ -1,0 +1,8 @@
+<header>
+  <h2><a href="{{ page.link }}">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</a></h2>
+  <ul class="meta">
+    {% assign link_parts = page.link | split: "/" %}
+    <li>{{ page.date | date: "%-d %B %Y" }}</li>
+    <li><a href="{{ page.link }}">{{ link_parts[2] }}</a><!-- domain of link, linked to the item --></li>
+  </ul>
+</header>
