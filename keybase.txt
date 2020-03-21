@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/karlstolley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://stolley.dev
+  * I am karlstolley (https://keybase.io/karlstolley) on keybase.
+  * I have a public key ASDE4MW-o3ARzK4HOVzQDSsCMbJEJMFbNADq9aM_gqnAHQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01011bd508cedf63e9e5b27267b7be3dbac9759323e885d729b8aaadc779549da6920a",
+      "host": "keybase.io",
+      "kid": "0120c4e0c5bea37011ccae07395cd00d2b0231b24424c15b3400eaf5a33f82a9c01d0a",
+      "uid": "295f25c57cfcb5dcc3b141057682a119",
+      "username": "karlstolley"
+    },
+    "merkle_root": {
+      "ctime": 1584827004,
+      "hash": "faabb0cdcc0043d179dc3fb262332e07e7e4c626ae50a7e4090d38108d68f9e529aa1cc46fe279d37e8f5e05ed12a5975d84bda113c1b2d5b83602e606be8bd1",
+      "hash_meta": "3dc57ff3a8513645b097533e97dcf4dbb0a058e01e7c4b57d214b18f525d3605",
+      "seqno": 15534356
+    },
+    "service": {
+      "entropy": "VPZ1/QjrE697jIwalR3jPj9q",
+      "hostname": "stolley.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.0"
+  },
+  "ctime": 1584827022,
+  "expire_in": 504576000,
+  "prev": "952f3dbae89b0947bd8190925a94205fa4dcb3ef4b454468635d6a2bc48b9ae6",
+  "seqno": 63,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgxODFvqNwEcyuBzlc0A0rAjGyRCTBWzQA6vWjP4KpwB0Kp3BheWxvYWTESpcCP8QglS89uuibCUe9gZCSWpQgX6Tcs+9LRURoY11qK8SLmubEIG2AsGl9eBVvMbuTD6m1C4UO5gciXYlxY7zHxtkHl4MEAgHCo3NpZ8RAo+Dk2HY+RfMwfk4hwAW0Wl664q0VqiB5SxgvtpOs11aLYs1iFtMlnYcRY0SvrpWIKsB0NilTa1fan1G2MAwHAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDlm0v8HKNAiNhuCb+kNBHS0OH8kr0cFiohO2aQk/ytgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/karlstolley
+
+==================================================================
