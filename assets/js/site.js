@@ -14,7 +14,14 @@ themeSwitcher();
 (function() {
 
   // get rid of FB tracker shit
-  location.href = location.href.split('?')[0];
+  function stripTrackerBullshit(loc) {
+    loc = loc.split('?');
+    if (loc.length > 1) {
+      location.href = loc[0];
+    }
+  }
+
+  stripTrackerBullshit(location.href);
 
   if (!('querySelector' in document && 'insertAdjacentHTML' in document.createElement('div') && 'fetch' in window)) {
     // Go no further if a browser doesn't have querySelector, insertAdjacentElement, or fetch
