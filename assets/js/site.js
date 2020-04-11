@@ -1,64 +1,3 @@
-function storageAvailable(type) {
-  try {
-    var storage = window[type];
-    var x = '__storage_test__';
-    storage.setItem(x, x);
-    storage.removeItem(x);
-    return true;
-  }
-  catch(e) {
-    return false;
-  }
-}
-
-function themeSwitcher() {
-  // Exit fast if no CSS properties support
-  if (!('supports' in CSS && CSS.supports("(--foo: bar)"))) {
-    return;
-  }
-
-  var footer = document.querySelector('#footer');
-  var toggle = document.createElement('a');
-  var html = document.querySelector('html');
-  var period = '.';
-
-  var dark_mode = false;
-  var modes = ['light','dark'];
-
-  if ('matchMedia' in window) {
-    dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (dark_mode) {
-      modes.reverse(); // ['dark','light']
-    }
-  }
-
-  if (storageAvailable('localStorage')) {
-    if (!localStorage.getItem('modes')) {
-      localStorage.setItem('modes',modes.join(','));
-    } else {
-      modes = localStorage.getItem('modes').split(',');
-    }
-  }
-
-  html.classList.add(modes[0]);
-
-  toggle.id = 'mode';
-  toggle.href = '#null';
-  toggle.textContent = 'Switch to ' + modes[1] + ' theme';
-  footer.appendChild(toggle);
-  toggle.insertAdjacentText('afterend', period);
-
-  toggle.addEventListener('click', function(e) {
-    e.preventDefault();
-    html.classList.replace(modes[0],modes[1]);
-    modes.reverse();
-    if (storageAvailable('localStorage')) {
-      localStorage.setItem('modes',modes.join(','));
-    }
-    toggle.textContent = 'Switch to ' + modes[1] + ' theme';
-  });
-}
-
 themeSwitcher();
 
 (function() {
@@ -141,6 +80,68 @@ themeSwitcher();
   });
 
 })();
+
+function storageAvailable(type) {
+  try {
+    var storage = window[type];
+    var x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }
+  catch(e) {
+    return false;
+  }
+}
+
+function themeSwitcher() {
+  // Exit fast if no CSS properties support
+  if (!('supports' in CSS && CSS.supports("(--foo: bar)"))) {
+    return;
+  }
+
+  var footer = document.querySelector('#footer');
+  var toggle = document.createElement('a');
+  var html = document.querySelector('html');
+  var period = '.';
+
+  var dark_mode = false;
+  var modes = ['light','dark'];
+
+  if ('matchMedia' in window) {
+    dark_mode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (dark_mode) {
+      modes.reverse(); // ['dark','light']
+    }
+  }
+
+  if (storageAvailable('localStorage')) {
+    if (!localStorage.getItem('modes')) {
+      localStorage.setItem('modes',modes.join(','));
+    } else {
+      modes = localStorage.getItem('modes').split(',');
+    }
+  }
+
+  html.classList.add(modes[0]);
+
+  toggle.id = 'mode';
+  toggle.href = '#null';
+  toggle.textContent = 'Switch to ' + modes[1] + ' theme';
+  footer.appendChild(toggle);
+  toggle.insertAdjacentText('afterend', period);
+
+  toggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    html.classList.replace(modes[0],modes[1]);
+    modes.reverse();
+    if (storageAvailable('localStorage')) {
+      localStorage.setItem('modes',modes.join(','));
+    }
+    toggle.textContent = 'Switch to ' + modes[1] + ' theme';
+  });
+}
+
 
 /* PrismJS 1.17.1
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+ruby+git+json */
