@@ -26,8 +26,8 @@ page](https://www.gnu.org/software/sed/) opens with a fine summary:
 > file using pattern matching or substituting multiple occurrences of a string within a file.
 
 And that’s what I need: to comb through a static set of HTML files for references like `<script
-src="assets/js/site​.js">` and insert a hash so the file referenced becomes something like
-`assets/js/site.0a1cb23.js`. The file itself remains `site.js` on the server, so I don’t have to
+src="assets/js/site.​js">` and insert a hash so the file referenced becomes something like
+`assets/js/site.0a1cb23.​js`. The file itself remains `site.​js` on the server, so I don’t have to
 worry about moving files around and changing their names. A quick little location-scoped regex
 rewrite block in Nginx will ignore the hash:
 
@@ -77,8 +77,8 @@ assign the SHORTHASH value you to `const VERSION` as well. These lines get added
 `post-receive` lines listed above:
 
 ```txt
-sed -E -i "s/var VERSION/const VERSION = \"$SHORTHASH\"/" _site/sw​.js;
-sed -E -i "s/'([^:]+)\.(css|js)/'\1.$SHORTHASH.\2/g" _site/sw​.js;
+sed -E -i "s/var VERSION/const VERSION = \"$SHORTHASH\"/" _site/sw.​js;
+sed -E -i "s/'([^:]+)\.(css|js)/'\1.$SHORTHASH.\2/g" _site/sw.​js;
 ```
 
 And that changes the opening lines of my service worker script to:
@@ -94,8 +94,8 @@ go from this:
 ```javascript
 const site_preloaded_assets = {
   essential: [
-    '/assets/css/screen​.css',
-    '/assets/js/site​.js',
+    '/assets/css/screen.​css',
+    '/assets/js/site.​js',
     '/',
     site_offline_path
   ],
@@ -109,7 +109,7 @@ to this:
 const site_preloaded_assets = {
   essential: [
     '/assets/css/screen.0a1cb23.css',
-    '/assets/js/site.0a1cb23.js',
+    '/assets/js/site.0a1cb23.​js',
     '/',
     site_offline_path
   ],
