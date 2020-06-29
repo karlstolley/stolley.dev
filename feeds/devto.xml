@@ -14,8 +14,8 @@ layout: null
     <uri>https://stolley.dev/</uri>
   </author>
 
-  {% for post in site.posts %}
-    {% if post.tags.first == 'devto' %}
+  {%- for post in site.posts -%}
+    {%- if post.tags.first == 'devto' -%}
     <entry>
       <title>{{ post.title }}</title>
       <link href="{{ site.url }}{{ post.url }}" rel="alternate"/>
@@ -25,15 +25,15 @@ layout: null
         <name>Karl Stolley</name>
         <uri>https://stolley.dev/</uri>
       </author>
-      {% if post.tags.size > 1 %}
-        {% assign post_tags = post.tags | join: ", " | remove: "devto, " %}
+      {%- if post.tags.size > 1 -%}
+        {%- assign post_tags = post.tags | join: ", " | remove: "devto, " -%}
         <categories>{{ post_tags }}</categories>
-      {% endif %}
+      {%- endif -%}
       <content type="html" xml:lang="en"><![CDATA[
       {{ post.content | strip_newlines }}
       ]]></content>
     </entry>
-    {% endif %}
-  {% endfor %}
+    {%- endif -%}
+  {%- endfor -%}
 
 </feed>
