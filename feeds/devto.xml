@@ -30,7 +30,7 @@ layout: null
         <categories>{{ post_tags }}</categories>
       {% endif %}
       <content type="html" xml:lang="en"><![CDATA[
-      {{ post.content }}
+      {{ post.content | strip_newlines }}
       ]]></content>
     </entry>
     {% endif %}
