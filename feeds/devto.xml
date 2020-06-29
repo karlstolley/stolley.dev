@@ -4,11 +4,11 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>stolley.dev: Linked Posts</title>
+  <title>stolley.dev: DEV Posts</title>
   <link href="{{ site.url }}/feeds/linked.xml" rel="self"/>
   <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ site.url }}/feeds/all.xml</id>
+  <id>{{ site.url }}/feeds/devto.xml</id>
   <author>
     <name>Karl Stolley</name>
     <uri>https://stolley.dev/</uri>
