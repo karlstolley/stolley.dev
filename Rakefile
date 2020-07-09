@@ -20,6 +20,7 @@ namespace :new do
       f.write <<~YML.chomp
         ---
         title: #{title}
+        date: #{Time.now.strftime("%F %T %z")}
         category: #{category}
         #{optional_text(category == 'post', "permalink: /#{slug}/\n---", '---')}
 
@@ -40,6 +41,7 @@ namespace :new do
         ---
         title: #{title}
         link: #{link}
+        date: #{Time.now.strftime("%F %T %z")}
         category: linked
         ---
 
