@@ -17,7 +17,11 @@ layout: none
   {% for post in site.posts %}
   <entry>
     <title><![CDATA[{{ post.title }}]]></title>
+    {%- if post.category == 'linked' -%}
+    <link href="{{ post.link }}" rel="alternate"/>
+    {%- else -%}
     <link href="{{ site.url }}{{ post.url }}" rel="alternate"/>
+    {%- endif -%}
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.url }}</id>
     <author>
@@ -26,6 +30,9 @@ layout: none
     </author>
     <content type="html" xml:lang="en"><![CDATA[
     {{ post.content }}
+    {%- if post.category == 'linked' -%}
+    <p><a href="{{ site.url }}{{ post.url }}">View “{{ post.title }}” on stolley.dev</a>.</p>
+    {%- endif -%}
     ]]></content>
   </entry>
   {% endfor %}

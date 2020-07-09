@@ -20,7 +20,11 @@ layout: none
           "name": "Karl Stolley"
         },
         "id": "{{ site.url }}{{ post.url }}",
+        {%- if post.category == 'linked' -%}
+        "url": "{{ post.link }}",
+        {%- else -%}
         "url": "{{ site.url }}{{ post.url }}",
+        {%- endif -%}
         "content_html": "{{ post.content | replace: '"', '\"' | strip_newlines }}",
         "content_text": "{{ post.content | replace: "<blockquote>", "> " | strip_html | newline_to_br | strip_newlines | replace: '<br /><br />', '\n\n' | replace: '<br />', ' ' | escape_once | replace: "&lt;", "<" | replace: "&gt;", ">" | replace: '&quot;', '\"' | replace: '   ', ' ' | replace: '  ', ' ' | replace: "\n ", "\n" | strip }}"
       {% if forloop.last %}

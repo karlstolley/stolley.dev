@@ -18,7 +18,7 @@ layout: none
     {% if post.categories.first == 'linked' %}
     <entry>
       <title><![CDATA[{{ post.title }}]]></title>
-      <link href="{{ site.url }}{{ post.url }}" rel="alternate"/>
+      <link href="{{ post.link }}" rel="alternate"/>
       <updated>{{ post.date | date_to_xmlschema }}</updated>
       <id>{{ site.url }}{{ post.url }}</id>
       <author>
@@ -27,6 +27,7 @@ layout: none
       </author>
       <content type="html" xml:lang="en"><![CDATA[
       {{ post.content }}
+      <p><a href="{{ site.url }}{{ post.url }}">View “{{ post.title }}” on stolley.dev</a>.</p>
       ]]></content>
     </entry>
     {% endif %}
