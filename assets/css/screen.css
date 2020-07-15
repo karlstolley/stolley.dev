@@ -150,8 +150,12 @@ ol:not([class]) li {
   padding-bottom: 0.3529411765em; /* 6px */
 }
 ul:not([class]) li {
-  list-style-type: circle;
+  list-style-type: disc;
   padding-bottom: 0.3529411765em; /* 6px */
+}
+ul:not([class]) ul li {
+  list-style-type: circle;
+  margin-left: 1.0588235294em; /* 18 / 17 */
 }
 .latest > li,
 .archive > li {
