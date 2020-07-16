@@ -12,7 +12,8 @@ tags:
 I didn’t try my very hardest to find a list of all of the new Success Criteria in
 [Web Content Accessibility Guidelines 2.1 (WCAG 2.1)](https://www.w3.org/TR/WCAG21/) that were not a
 part of [WCAG 2.0](https://www.w3.org/TR/WCAG20/), but if there is such a list, it’s not easy to
-find.
+find. UPDATE: Such a list is literally Section 0.5.1: [New Features in WCAG 2.1](https://www.w3.org/TR/WCAG21/#new-features-in-wcag-2-1). How I talked myself into such a thing not existing is a mystery.
+But putting the list below together was still a good exercise for me.
 
 And given the formatting for WCAG 2.0, it’s not all that easy to make such a list, either. But in
 case this is helpful to anyone, here are the seventeen new Success Criteria in WCAG 2.1, which
