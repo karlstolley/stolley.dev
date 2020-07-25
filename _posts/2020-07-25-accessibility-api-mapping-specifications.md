@@ -41,7 +41,7 @@ of working draft status, including:
 
 * The [HTML Accessibility API Mappings 1.0](https://www.w3.org/TR/2020/WD-html-aam-1.0-20200718/),
 which surprisingly does not mention the [ARIA in HTML](https://www.w3.org/TR/html-aria/) specification.
-HTML in ARIA is also in Working Draft status, last updated in May 2020.
+[ARIA in HTML](https://www.w3.org/TR/html-aria/) is also in Working Draft status, last updated in May 2020.
 * The [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/), which hasn’t been updated
 since May of 2018, although the [SVG-AAM GitHub repository](https://github.com/w3c/svg-aam) is active
 and [the Editor’s Draft](https://w3c.github.io/svg-aam/) reflects that.
