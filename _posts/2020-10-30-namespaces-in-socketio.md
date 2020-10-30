@@ -4,8 +4,8 @@ date: 2020-10-30 18:12:27 -0500
 category: post
 permalink: /dynamic-namespaces-in-socket-io/
 tags:
-  - webrtc
   - devto
+  - webrtc
   - socket-io
 ---
 
