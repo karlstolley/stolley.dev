@@ -9,16 +9,11 @@ tags:
   - socket-io
 ---
 
-I’m teaching [socket.io](https://socket.io/) as a convenient WebRTC signaling channel in [my WebRTC
-class](https://courses.stolley.co/rtc/) this semester. As part of prepping that, I finally had to
-sit down and figure out dynamic namespaces in socket.io. There is some really tricky business to
-namespaces, dynamic or otherwise, particularly when it comes to listening for messages and events
-server-side sent from connected clients on the namespace.
+I’m teaching [socket.io](https://socket.io/) as a convenient WebRTC signaling channel in [my WebRTC class](https://courses.stolley.co/rtc/) this semester. As part of prepping that, I finally had to sit down and figure out dynamic namespaces in socket.io. There is some really tricky business to namespaces, dynamic or otherwise, particularly when it comes to listening for messages and events server-side sent from connected clients on the namespace.
 
 **In short, namespaced sockets work differently on the client from how they do on the server.**
 
-On the client, we simply create a namespaced socket connection (`ns`, here with a Google Meet–like
-namespace of `/jkl-mnop-qrs`) and both listen and emit events on it directly:
+On the client, we simply create a namespaced socket connection (`ns`, here with a Google Meet–like namespace of `/jkl-mnop-qrs`) and both listen and emit events on it directly:
 
 ```javascript
 // Client-side code (site.js)
@@ -37,9 +32,7 @@ document.querySelector('body').addEventListener('click', function(e) {
 });
 ```
 
-In that example, the listener `ns.on(...)` handles incoming messages and sends a pre-determined
-message to the socket server when someone clicks anywhere in the `<body>` element. Both use the `ns`
-object created from calling the `io()` constructor.
+In that example, the listener `ns.on(...)` handles incoming messages and sends a pre-determined message to the socket server when someone clicks anywhere in the `<body>` element. Both use the `ns` object created from calling the `io()` constructor.
 
 On the server, though, it’s a completely different, more complicated story.
 
@@ -67,13 +60,9 @@ namespaces.on('connection', function(socket) {
 });
 ```
 
-To summarize the content of the comments: you listen for connections on the namespaces that match
-the pattern in `socket.of(...)`. You can emit messages on the `namespace` returned by
-`namespaces.on(...)`, but you **cannot** listen for incoming messages or any other events on
-`namespace`. Instead, you listen on the socket object (`socket`) created on the connection event.
+To summarize the content of the comments: you listen for connections on the namespaces that match the pattern in `socket.of(...)`. You can emit messages on the `namespace` returned by `namespaces.on(...)`, but you **cannot** listen for incoming messages or any other events on `namespace`. Instead, you listen on the socket object (`socket`) created on the connection event.
 
-Additionally, if you want to broadcast a message (which sends the message to all connected clients
-except the sending client), you must use `socket.broadcast.emit`.
+Additionally, if you want to broadcast a message (which sends the message to all connected clients except the sending client), you must use `socket.broadcast.emit`.
 
 So a simplified version of the code above looks like this:
 
@@ -94,13 +83,8 @@ namespaces.on('connection', function(socket) {
 });
 ```
 
-Now the `namespace` variable is only being used for diagnostic purposes (`Successfully connected on
-namespace: ${namespace.name}`).
+Now the `namespace` variable is only being used for diagnostic purposes (`Successfully connected on namespace: ${namespace.name}`).
 
-Everything else is listening or emitting on the socket object (`socket`) returned to the initial
-`namespaces.on(...)` callback on each client connection.
+Everything else is listening or emitting on the socket object (`socket`) returned to the initial `namespaces.on(...)` callback on each client connection.
 
-The thing that is tricky to grasp (and that cost me about 3 hours of my life) is that that `socket`
-object is unique to the connection on each namespace. This is not properly reflected ANYWHERE in
-[socket.io’s documentation](https://socket.io/docs/namespaces/), which makes me crazy. And yes, I
-should write something and submit a pull request. I know.
+The thing that is tricky to grasp (and that cost me about 3 hours of my life) is that that `socket` object is unique to the connection on each namespace. This is not properly reflected ANYWHERE in [socket.io’s documentation](https://socket.io/docs/namespaces/), which makes me crazy. And yes, I should write something and submit a pull request. I know.
