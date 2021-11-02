@@ -70,8 +70,8 @@ whatever it is. Don’t let it become the excuse not to write. Let it be the thi
 fix—not before you write, but *as* you write.
 
 Take my hang-up with long and winding sentences. I’ve found a technique for countering it. And
-that’s to writing by authors who do exactly the *opposite* of whatever I’m trying to fix in my own
-writing. Less David Foster Wallace, more Virginia Woolf.
+that’s to read more writing by authors who do exactly the opposite of whatever I’m trying to fix
+in my own writing. Less David Foster Wallace, more Virginia Woolf.
 
 To get myself primed to write, I often read a few punchy, staccato sentences by someone like Hunter
 S. Thompson, something like this short passage from his classic “The Kentucky Derby is Decadent and
