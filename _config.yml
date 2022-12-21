@@ -18,6 +18,9 @@ permalink: /:categories/:title/
 
 highlighter: using_prism_thanks
 
+include:
+  - .well-known
+
 exclude:
   - backstop_data
   - backstop.json
