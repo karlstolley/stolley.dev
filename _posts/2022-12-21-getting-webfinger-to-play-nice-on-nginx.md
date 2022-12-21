@@ -23,13 +23,13 @@ If you search your favorite Mastodon instance for that email address, or even
 
 Creating
 [the `webfinger` file](https://github.com/karlstolley/stolley.dev/blob/main/.well-known/webfinger)
-and putting it in your `.well-known/` URL path is only part of the story, however. You need to make
-sure that your web server or platform knows how to make sensible responses to requests for
-`.well-known/webfinger`.
+and putting it in your URL’s `/.well-known/` path is only part of the story, however. You need to
+make sure that your web server or platform knows how to return sensible responses to requests for
+`/.well-known/webfinger`.
 
 I’ve got a humble flat-file setup for
 [my WebFinger file](https://stolley.dev/.well-known/webfinger). But to get Nginx to serve
-`.well-known/webfinger` correctly, I also added the following location block for the file:
+`/.well-known/webfinger` correctly, I also added the following location block for the file:
 
 ```conf
 location /.well-known/webfinger {
