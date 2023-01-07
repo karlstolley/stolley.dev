@@ -185,6 +185,11 @@ img {
 a {
   color: #2076b3;
   color: var(--color-accent-primary);
+}
+
+header a,
+footer a,
+a[href="/archive/"] {
   text-decoration: none;
 }
 
@@ -268,7 +273,8 @@ cite,em,i {
 /* 1200px */
 @media screen and (min-width: 75em) {
   html {
-    font-size: 1.25em;
+    font-size: 1.25em; /* 20px */
+    line-height: 1.6em; /* 32px */
   }
   figure {
     margin-right: -50%;
@@ -312,6 +318,9 @@ pre {
 }
 blockquote code {
   background: inherit;
+}
+a code {
+  color: inherit;
 }
 header code,
 .archive code {
