@@ -38,20 +38,22 @@ location /.well-known/webfinger {
 }
 ```
 
-What that does is, first, ensure that the `webfinger` file is sent with the expected
-`application/jrd+json` MIME type. The funny `types { }` syntax has the effect of basically ignoring
-the types mapped out in the `mime.types` file that ships with Nginx, and instead setting
-`application/jrd+json` as the MIME type and `content-type` header for .  I found in testing that
-other methods were passing down two `content-type` headers: one with the Nginx default
-`application/octet-stream`, and the other with `application/jrd+json`. (Note also that with `types`,
-you don’t need to also call `add_header` to set `content-type`).
+The first thing that block does is ensure that the `webfinger` file is sent with the correct
+`application/jrd+json` MIME type. The funny `types { }` syntax, with the empty braces, overrides
+Nginx’s default MIME types in `mime.types` and sets `application/jrd+json` as the default MIME type.
+The call to `types` also has the effect of setting the `content-type` HTTP header. For that reason,
+you should’t attempt to call `add_header` to set `content-type`. From experimenting, I found that it
+and other Nginx header-setting methods resulted in two `content-type` headers
+([an HTTP no-no](https://httpwg.org/specs/rfc9110.html#field.content-type)): one `content-type`
+header with the Nginx default `application/octet-stream` and the other with the correct
+`application/jrd+json`.
 
-The second thing the location block does is set a permissive CORS header, in keeping with
+The second thing that location block does is set a permissive CORS header, in keeping with
 [the WebFinger spec (RFC 7033)](https://www.rfc-editor.org/rfc/rfc7033.html), specifically
 [section 5 on CORS](https://www.rfc-editor.org/rfc/rfc7033.html#section-6). That little header
 ensures the widest possible access to the file, including from client-side JavaScript.
 
-To test things out, I just made a little call to `curl`—here showing only the HTTP response headers
+To test things out, I made this little call to `curl`—here showing only the HTTP response headers
 and contents of my `webfinger` file:
 
 ```console
