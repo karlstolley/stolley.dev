@@ -1,17 +1,17 @@
 require 'date'
 
-def optional_text(condition,truthy,falsey)
-  (condition ? truthy : falsey).strip
-end
+# def optional_text(condition,truthy,falsey)
+#   (condition ? truthy : falsey).strip
+# end
 
 namespace :new do
   desc "Interactively create a new post"
   task :post do
     print "Post title: "
     title = STDIN.gets.chomp
-    print "Post category (default: post): "
+    print "Post category (default: posted): "
     category = STDIN.gets.chomp
-    category = category.empty? ? "post" : category
+    category = category.empty? ? "posted" : category
     puts "Title is '#{title}' and category is '#{category}'"
     slug = title.downcase.gsub(/\s/,'-').gsub(/[^\w-]/,'').gsub(/[-]{2,}/,'-')
     file_name = "#{Date.today.strftime("%F")}-#{slug}.md"
@@ -22,7 +22,7 @@ namespace :new do
         title: #{title}
         date: #{Time.now.strftime("%F %T %z")}
         category: #{category}
-        #{optional_text(category == 'post', "permalink: /#{slug}/\n---", '---')}
+        ---
 
       YML
     end
