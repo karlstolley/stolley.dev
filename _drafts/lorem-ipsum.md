@@ -1,6 +1,6 @@
 ---
 title: Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit
-category: post
+category: posted
 permalink: /lorem-ipsum/
 date: 2039-11-29
 ---

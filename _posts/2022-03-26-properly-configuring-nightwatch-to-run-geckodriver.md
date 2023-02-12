@@ -1,8 +1,7 @@
 ---
 title: Properly Configuring Nightwatch to Run Geckodriver
 date: 2022-03-26 16:11:40 -0500
-category: post
-permalink: /properly-configuring-nightwatch-to-run-geckodriver/
+category: posted
 ---
 
 I’ll get right to it: both the stock Nightwatch configuration file (as of at least

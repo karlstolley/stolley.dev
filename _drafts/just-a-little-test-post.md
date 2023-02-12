@@ -1,6 +1,6 @@
 ---
 title: Just a Little Test Post
-category: post
+category: posted
 permalink: /test-post/
 date: 2039-11-28
 ---

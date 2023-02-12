@@ -1,7 +1,6 @@
 ---
 title: "`@supports` Shines Brightest on Dependent Styles"
-category: post
-permalink: /supports-shines-brightest-on-dependent-styles/
+category: posted
 tags:
   - devto
   - css

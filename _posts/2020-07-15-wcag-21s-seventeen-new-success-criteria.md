@@ -1,8 +1,7 @@
 ---
 title: WCAG 2.1's Seventeen New Success Criteria
 date: 2020-07-15 12:38:02 -0500
-category: post
-permalink: /wcag-21s-seventeen-new-success-criteria/
+category: posted
 tags:
   - devto
   - accessibility

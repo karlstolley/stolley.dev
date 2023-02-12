@@ -1,8 +1,7 @@
 ---
 title: Getting WebFinger to play nicely on Nginx
 date: 2022-12-21 13:03:48 -0600
-category: post
-permalink: /getting-webfinger-to-play-nicely-on-nginx/
+category: posted
 tags:
   - devto
   - nginx

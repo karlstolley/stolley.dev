@@ -1,8 +1,7 @@
 ---
 title: Confront Your Writing Hang-Up
 date: 2021-11-02 15:47:07 -0500
-category: post
-permalink: /confront-your-writing-hang-up/
+category: posted
 tags:
   - devto
   - pragprog

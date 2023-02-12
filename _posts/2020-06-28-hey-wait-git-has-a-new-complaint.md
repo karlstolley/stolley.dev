@@ -1,7 +1,6 @@
 ---
 title: "Hey, Wait: Git Has a New Complaint"
-category: post
-permalink: /hey-wait-git-has-a-new-complaint/
+category: posted
 tags:
   - devto
   - git

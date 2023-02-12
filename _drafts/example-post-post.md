@@ -1,6 +1,6 @@
 ---
 title: Syntax Highlighting
-category: post
+category: posted
 permalink: /syntax/
 date: 2039-11-27
 ---

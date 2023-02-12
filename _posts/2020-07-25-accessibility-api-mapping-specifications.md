@@ -1,8 +1,7 @@
 ---
 title: Accessibility API Mapping Specifications
 date: 2020-07-25 17:21:21 -0500
-category: post
-permalink: /accessibility-api-mapping-specifications/
+category: posted
 ---
 
 One of the most exciting areas of web accessibility continues to be the development and

@@ -1,8 +1,7 @@
 ---
 title: Working to Get Off the Sidelines
 date: 2021-05-18 15:48:00 -0500
-category: post
-permalink: /working-to-get-off-the-sidelines/
+category: posted
 tags:
   - devto
   - webrtc

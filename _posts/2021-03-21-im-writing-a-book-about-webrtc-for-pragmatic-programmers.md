@@ -1,8 +1,7 @@
 ---
 title: I'm Writing a Book about WebRTC for Pragmatic Programmers
 date: 2021-03-21 18:25:30 -0500
-category: post
-permalink: /im-writing-a-book-about-webrtc-for-pragmatic-programmers/
+category: posted
 tags:
   - devto
   - webrtc

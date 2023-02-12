@@ -1,7 +1,6 @@
 ---
 title: The Time Change Brings Out the Worst in Everyone
-category: post
-permalink: /the-time-change-brings-out-the-worst-in-everyone/
+category: posted
 ---
 
 Okay. So first three basic facts with no citations or supporting evidence:

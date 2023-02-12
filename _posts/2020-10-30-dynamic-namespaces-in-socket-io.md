@@ -1,8 +1,7 @@
 ---
 title: Dynamic Namespaces in Socket.io
 date: 2020-10-30 18:12:27 -0500
-category: post
-permalink: /dynamic-namespaces-in-socket-io/
+category: posted
 tags:
   - devto
   - webrtc

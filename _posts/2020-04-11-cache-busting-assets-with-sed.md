@@ -1,7 +1,6 @@
 ---
 title: Cache-busting Assets with sed
-category: post
-permalink: /cache-busting-assets-with-sed/
+category: posted
 tags:
   - devto
   - javascript

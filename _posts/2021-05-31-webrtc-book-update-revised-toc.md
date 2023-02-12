@@ -1,8 +1,7 @@
 ---
 title: "WebRTC Book Update: Revised TOC and Some More Legroom"
 date: 2021-05-31 11:08:19 -0500
-category: post
-permalink: /webrtc-book-update-revised-toc/
+category: posted
 tags:
   - devto
   - webrtc
