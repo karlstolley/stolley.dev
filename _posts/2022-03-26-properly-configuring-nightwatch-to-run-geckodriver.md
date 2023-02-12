@@ -75,7 +75,7 @@ Curious about what’s going on? I’ll elaborate, property by significant prope
   discovered by running `wget` out of desperation. `wget` then retried on `127.0.0.1`:
   ```sh
   $ geckodriver
-  1648330755779	geckodriver	INFO	Listening on 127.0.0.1:4444
+  1648330755779  geckodriver  INFO  Listening on 127.0.0.1:4444
   # separate terminal process, with geckodriver still running:
   $ wget http://localhost:4444/
   --2022-03-26 16:49:18--  http://localhost:4444/
