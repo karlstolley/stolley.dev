@@ -1,5 +1,7 @@
 ---
 title: "WebRTC Book Update: Revised TOC and Some More Legroom"
+description: >
+  This is starting to feel more like a book to me.
 date: 2021-05-31 11:08:19 -0500
 category: posted
 tags:

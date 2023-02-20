@@ -1,5 +1,7 @@
 ---
 title: Optional HTML
+description: >
+  Jens Meiert is a big fan of omitting optional HTML.
 link: https://meiert.com/en/blog/optional-html/
 category: linked
 tags: devto

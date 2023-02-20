@@ -1,5 +1,8 @@
 ---
 title: Two-Value Display Properties in CSS
+description: >
+  The incomparable Rachel Andrew introduces the brave new world of two-value CSS `display`
+  properties.
 link: https://hacks.mozilla.org/2019/10/the-two-value-syntax-of-the-css-display-property/
 category: linked
 tags: devto
@@ -22,5 +25,5 @@ other hand, with that complexity comes an invitation to web developers to better
 flow and formatting context—to which Rachel Andrew’s book *[The New CSS
 Layout](https://abookapart.com/products/the-new-css-layout)* is an indispensable guide.
 
-The two-value syntax for `display` is currently [only available in Firefox
-70](https://developer.mozilla.org/en-US/docs/Web/CSS/display#Browser_compatibility), listed in the compatibility table at MDN under “multi-keyword values.”
+The two-value syntax for `display` is currently [only available in Firefox 70](https://developer.mozilla.org/en-US/docs/Web/CSS/display#Browser_compatibility),
+listed in the compatibility table at MDN under “multi-keyword values.”

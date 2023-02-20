@@ -1,5 +1,7 @@
 ---
 title: Teachers Deserve a Better Plan
+description: >
+  “America’s teachers are caught in a trap.”
 link: https://www.theatlantic.com/culture/archive/2020/07/dave-grohl-pandemic-reopening-schools-health-teachers/614422/
 date: 2020-07-21 21:24:04 -0500
 category: linked

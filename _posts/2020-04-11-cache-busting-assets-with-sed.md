@@ -1,5 +1,7 @@
 ---
 title: Cache-busting Assets with sed
+description: >
+  I prefer mining old-school Unix tools and using them to building out a custom deploy script.
 category: posted
 tags:
   - devto

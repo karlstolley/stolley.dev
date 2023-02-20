@@ -1,5 +1,7 @@
 ---
 title: Sound Advice for Filing Bug Reports
+description: >
+  “Filing a good bug isn’t hard, but takes a little work.”
 link: https://web.dev/how-to-file-a-good-bug/
 category: linked
 ---

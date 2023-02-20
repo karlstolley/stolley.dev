@@ -1,5 +1,7 @@
 ---
 title: Styling Empty Grid Cells with Generated Content
+description: >
+  I couldn’t simply fudge it with padding.
 link: https://www.smashingmagazine.com/2018/02/generated-content-grid-layout/
 date: 2020-10-09 17:50:09 -0400
 category: linked

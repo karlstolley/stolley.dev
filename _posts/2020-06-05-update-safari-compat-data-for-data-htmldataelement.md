@@ -1,5 +1,7 @@
 ---
 title: Update Safari compat data for `<data>`, `HTMLDataElement`
+description: >
+  A small improvement someplace else.
 link: https://github.com/mdn/browser-compat-data/pull/6251
 category: linked
 ---

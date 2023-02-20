@@ -1,5 +1,7 @@
 ---
 title: Properly Configuring Nightwatch to Run Geckodriver
+description: >
+  Curious about what’s going on? I’ll elaborate.
 date: 2022-03-26 16:11:40 -0500
 category: posted
 ---

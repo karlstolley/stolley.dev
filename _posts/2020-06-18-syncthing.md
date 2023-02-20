@@ -1,5 +1,8 @@
 ---
 title: Syncthing
+description: >
+  I think one of my weekend projects is going to be to give this thing a try, including on a
+  headless Raspberry Pi.
 link: https://syncthing.net
 category: linked
 ---

@@ -1,5 +1,8 @@
 ---
 title: The Time Change Brings Out the Worst in Everyone
+description: >
+  Puzzle over the problem long enough, and what you’ll probably come up with as a solution is what
+  we’ve got.
 category: posted
 ---
 

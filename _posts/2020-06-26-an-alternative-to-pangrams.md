@@ -1,5 +1,7 @@
 ---
 title: An Alternative to Pangrams
+description: >
+  “I find them singularly useless in type design, and I don’t use them in my work.”
 link: https://www.typography.com/blog/text-for-proofing-fonts
 category: linked
 ---

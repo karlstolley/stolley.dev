@@ -20,6 +20,8 @@ namespace :new do
       f.write <<~YML.chomp
         ---
         title: #{title}
+        description: >
+          DESCRIPTIVELY DESCRIBE THIS POST
         date: #{Time.now.strftime("%F %T %z")}
         category: #{category}
         ---
@@ -41,6 +43,8 @@ namespace :new do
       f.write <<~YML.chomp
         ---
         title: #{title}
+        description: >
+          DESCRIPTIVELY DESCRIBE THIS LINK
         link: #{link}
         date: #{Time.now.strftime("%F %T %z")}
         category: linked

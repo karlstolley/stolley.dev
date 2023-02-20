@@ -1,5 +1,7 @@
 ---
 title: "`@supports` Shines Brightest on Dependent Styles"
+description: >
+  Feature queries apply a set of style declarations when a given feature is supported.
 category: posted
 tags:
   - devto

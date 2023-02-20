@@ -1,5 +1,7 @@
 ---
 title: The Strategic Advantages of Headless Web Design
+description: >
+  Gal Shachar is offering the hard sell on headless content management systems.
 link: https://www.sitepoint.com/headless-web-design-strategic-advantage/
 category: linked
 tags: devto

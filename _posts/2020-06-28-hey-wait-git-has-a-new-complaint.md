@@ -1,5 +1,7 @@
 ---
 title: "Hey, Wait: Git Has a New Complaint"
+description: >
+  By setting `pull.ff only`, Git will no longer race ahead and create a merge commit.
 category: posted
 tags:
   - devto

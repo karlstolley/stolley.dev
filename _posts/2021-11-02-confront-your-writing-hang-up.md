@@ -1,5 +1,7 @@
 ---
 title: Confront Your Writing Hang-Up
+description: >
+  Simple truths: Everyone writes. Some of us enjoy it. Most of us don’t.
 date: 2021-11-02 15:47:07 -0500
 category: posted
 tags:

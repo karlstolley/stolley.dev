@@ -1,5 +1,7 @@
 ---
 title: Stanford researchers identify four causes for ‘Zoom fatigue’
+description: >
+  “Just because you can use video doesn’t mean you have to.”
 link: https://news.stanford.edu/2021/02/23/four-causes-zoom-fatigue-solutions/
 date: 2021-02-25 17:05:23 -0600
 category: linked

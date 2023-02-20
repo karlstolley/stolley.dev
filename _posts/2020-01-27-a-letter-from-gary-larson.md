@@ -1,5 +1,7 @@
 ---
 title: A Letter from Gary Larson
+description: >
+  Scans of line art always looked like shit on 96 dpi screens.
 link: https://www.thefarside.com/about/48/a-letter-from-gary-larson
 category: linked
 ---

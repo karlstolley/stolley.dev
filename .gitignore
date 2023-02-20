@@ -1,6 +1,7 @@
 _site/
 .jekyll-metadata
 .jekyll-cache
+.ssl
 backstop_data/bitmaps_test
 backstop_data/html_report
 Gemfile.lock

@@ -1,5 +1,7 @@
 ---
-title: Getting WebFinger to play nicely on Nginx
+title: Getting WebFinger to Play Nicely on Nginx
+description: >
+  Leverage a domain in your control to enable people to search for you in the Mastodon fediverse.
 date: 2022-12-21 13:03:48 -0600
 category: posted
 tags:

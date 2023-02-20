@@ -1,5 +1,8 @@
 ---
 title: Working to Get Off the Sidelines
+description: >
+  Writing code for yourself or for your job is usually a bit different from writing code to teach
+  others.
 date: 2021-05-18 15:48:00 -0500
 category: posted
 tags:

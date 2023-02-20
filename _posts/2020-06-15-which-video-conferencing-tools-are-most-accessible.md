@@ -1,5 +1,7 @@
 ---
 title: Which Video Conferencing Tools Are Most Accessible?
+description: >
+  There’s an undeniable brand-name/brand-recognition factor here, to some degree.
 link: https://www.smashingmagazine.com/2020/06/accessible-video-conferencing-tools/
 category: linked
 ---

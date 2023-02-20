@@ -1,5 +1,8 @@
 ---
 title: The Uncertain Future of MDN
+description: >
+  I’ve pretty much stopped using any new mission-critical and even mission-pretty-important “free”
+  tools.
 link: https://www.quirksmode.org/blog/archives/2020/08/the_cult_of_the.html
 date: 2020-08-12 21:19:43 -0500
 category: linked

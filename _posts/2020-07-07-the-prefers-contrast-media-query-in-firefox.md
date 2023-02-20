@@ -1,5 +1,7 @@
 ---
 title: The `prefers-contrast` Media Query in Firefox
+description: >
+  A really interesting write up of how this is implemented.
 link: https://hacks.mozilla.org/2020/07/adding-prefers-contrast-to-firefox/
 category: linked
 ---

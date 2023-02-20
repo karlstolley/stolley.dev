@@ -1,5 +1,7 @@
 ---
 title: WCAG 2.1's Seventeen New Success Criteria
+description: >
+  Count ’em.
 date: 2020-07-15 12:38:02 -0500
 category: posted
 tags:

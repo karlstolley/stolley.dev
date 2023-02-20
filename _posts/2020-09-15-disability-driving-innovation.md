@@ -1,5 +1,7 @@
 ---
 title: Disability Driving Innovation
+description: >
+  “We need to recognize a disability not as a medical condition but as a mismatch in capabilities.”
 link: https://musebycl.io/musings/why-people-disabilities-are-powerful-drivers-innovation
 date: 2020-09-15 19:17:40 -0500
 category: linked

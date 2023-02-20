@@ -1,5 +1,7 @@
 ---
 title: Dynamic Namespaces in Socket.io
+description: >
+  I finally had to sit down and figure out dynamic namespaces in socket.io.
 date: 2020-10-30 18:12:27 -0500
 category: posted
 tags:

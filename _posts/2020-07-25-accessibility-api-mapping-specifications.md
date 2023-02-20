@@ -1,5 +1,7 @@
 ---
 title: Accessibility API Mapping Specifications
+description: >
+  The Core Mappings specification is part of the WAI-ARIA suite.
 date: 2020-07-25 17:21:21 -0500
 category: posted
 ---

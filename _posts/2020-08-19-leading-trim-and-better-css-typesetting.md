@@ -1,5 +1,7 @@
 ---
 title: Leading-Trim and Better CSS Typesetting
+description: >
+  It’s hard to overstate how important this property will be to typesetting with CSS.
 link: https://medium.com/microsoft-design/leading-trim-the-future-of-digital-typesetting-d082d84b202
 date: 2020-08-19 21:52:03 -0400
 category: linked

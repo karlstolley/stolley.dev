@@ -1,5 +1,7 @@
 ---
 title: Inclusive Web Performance Metrics for Assistive Technologies
+description: >
+  Including assistive technology in those metrics is long past due.
 link: https://www.filamentgroup.com/lab/a11y-ready/
 date: 2020-07-14 23:18:27 -0500
 category: linked

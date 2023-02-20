@@ -11,186 +11,191 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ========================================================================= */
 
 /*
-  Benton Style & Weight Reference
-  (Audited 9/20/2019)
-  `benton-sans`
-  400: book + italic
-  500: regular + italic
-  700: bold + italic
-  `benton-sans-condensed`
-  400: book + italic
-  700: bold + italic
+  Type Style & Weight Reference
+  ff-zwo-web-pro, sans-serif;
+  ff-tisa-web-pro, serif;
+
 */
 
 /* CSS Variables (aka Custom Properties) =================================== */
 
-/*
-  It's trendy to use :root to set global variables, but as a pseudo-
-  selector, :root has the same specicifity as a class. Equally trendy on
-  theme-switching examples is to use data attributes and the attribute
-  selector. But I prefer the simplicity of a humble, old-school class
-  selector.
-*/
-
-/*
-  Default light theme, with a class for dark users who want to switch to the
-  light theme.
-
-  Reversible background/foreground colors derived from Solarized theme,
-  https://ethanschoonover.com/solarized/
-*/
-html,
-.light {
-  --color-background: #fffbf0;
-  --color-foreground: #001f27;
-  --color-shaded-background: #eee8d5;
-  --color-shaded-foreground: #002b36;
-  --color-shaded-border: #657b83;
-  --color-accent-primary: #2076b3;
-  --color-p-base-emphasis: #586e75;
-  --color-p-base-body: #657b83;
-  --color-p-base-comments: #93a1a1;
-  --color-p-base-background: #fdf6e3;
-  --color-p-base-background-highlight: #eee8d5;
-}
-
-/* For older browsers or light users who want to switch to the dark theme */
-.dark {
-  --color-background: #001f27;
-  --color-foreground: #fdf6e3;
-  --color-shaded-background: #002b36;
-  --color-shaded-foreground: #fdf6e3;
-  --color-shaded-border: #657b83;
-  --color-accent-primary: #cb4b16;
-  --color-p-base-emphasis: #93a1a1;
-  --color-p-base-body: #839496;
-  --color-p-base-comments: #586e75;
-  --color-p-base-background: #002b36;
-  --color-p-base-background-highlight: #073642;
-}
-
-/* Newfangled media query to deliver the dark theme to users who so prefer */
-@media screen and (prefers-color-scheme: dark) {
-  /*
-    While this autmoatically applies the dark theme for users whose
-    preferences and browser support dark mode, there is the disadvantage
-    of having to duplicate the `.dark` variables above. I fully supports
-    delivering as much design as possible without JavaScript, this kind
-    of duplication makes a pretty strong case for leaning more heavily
-    on `window.matchMedia` and handling all theme-establishing and
-    -switching logic in JavaScript itself. That said, it would be
-    interesting to test the performance of the media query in CSS versus
-    `window.matchMedia` in JavaScript.
-  */
-  html {
-    --color-background: #001f27;
-    --color-foreground: #fdf6e3;
-    --color-shaded-background: #002b36;
-    --color-shaded-foreground: #fdf6e3;
-    --color-shaded-border: #657b83;
-    --color-accent-primary: #cb4b16;
-    --color-p-base-emphasis: #93a1a1;
-    --color-p-base-body: #839496;
-    --color-p-base-comments: #586e75;
-    --color-p-base-background: #002b36;
-    --color-p-base-background-highlight: #073642;
-  }
-}
 
 /* Foundational Styles ===================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background: #fffbf0;
-  background: var(--color-background);
-  color: #001f27;
-  color: var(--color-foreground);
   /* TODO: Add fallback families */
-  font-family: benton-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  font-size: 1.0625em; /* 17px */
-  font-weight: 500;
-  line-height: 1.4117647059em; /* 24px */
+  font-family: jaf-bernino-sans, sans-serif;
+  font-size: 1.125em; /* 18px */
+  font-weight: 400;
+  line-height: 1.3333333333em; /* 24px / 18px */
   text-rendering: optimizeLegibility;
 }
+
+.meta {
+  font-family: "antarctican-mono", monospace;
+}
+
+#header,
+#content,
+#footer {
+  padding: 0.8888888889em; /* 16px / 18px */
+}
+
+#header {
+  padding-top: 5.3333333333em; /* 96 / 18 */
+}
+
+html,
+#header,
+#footer,
+figcaption {
+  color: #abbe29;
+  background: #222523;
+}
+
+#footer {
+  font-size: 0.75em; /* 13.5 / 18 */
+}
+
+body {
+  color: #222523;
+  background: #abbe29;
+  background: #cad86c;
+  background: #bdcb5b;
+}
+
+h1 a {
+  color: #EEE;
+  text-decoration: none;
+}
+
+h3 a,
+h4 a {
+  text-decoration: none;
+}
+
 
 
 /* Heading, Paragraph, & List Styles ======================================= */
 
-h1,h2,h3 {
-  font-size: 1.333em; /* 22.661px */
-  font-weight: 700;
-  line-height: 1.3238603769em; /* 30px */
-  padding-bottom: 0.5295441507em; /*12px */
+h1 {
+  font-size: 1.3333333333em; /* 24 / 18 */
+  font-weight: bold;
+  text-transform: uppercase;
 }
+h2 {
+  font-size: 1.7777777778em; /* 32 / 18 */
+  line-height: 1.125em; /* 36 / 32 */
+  font-weight: bold;
+}
+h3 {
+  font-weight: bold;
+}
+
+article > header {
+  margin: 2em 0 1.3333333333em 0; /* 36/18, 24/18 */
+}
+
+.contact > h2 {
+  margin-bottom: 0.375em; /* 12 / 32 */
+}
+.resume article > h2 {
+  margin: 1.125em 0 0.375em 0; /* 36/32, 12/32 */
+}
+
+.experience h3 {
+  font-weight: normal;
+  border-bottom: 1px solid #222523;
+  margin-bottom: 12px;
+}
+.experience h4 { font-weight: bold; }
 
 p {
-  padding-bottom: 0.7058823529em; /* 12px */
+  margin-bottom: 0.6666666667em; /* 12px / 18px */
 }
 
-blockquote {
-  color: #657b83;
-  color: var(--color-p-base-body);
-  font-weight: 400;
-  padding: 0 0 0.7058823529em /* 12px */ 0;
-}
-blockquote p {
-  background: #eee8d5;
-  background: var(--color-shaded-background);
-  border-left: 4px solid #657b83;
-  border-left: 4px solid var(--color-shaded-border);
-  margin: 0 -14px;
-  padding: 0.3529411765em /* 6px */ 4px 0.3529411765em 10px;
+li {
+  margin-bottom: 0.3333333333em; /* 6px / 18px */
 }
 
-ol:not([class]),
-ul:not([class]) {
-  padding-bottom: 0.3529411765em; /* 6px */
+ol,ul {
+  margin-bottom: 0.6666666667em; /* 12px / 18px */
+  margin-left: 1.4444444444em; /* 26px / 18px */
 }
-ol:not([class]) li {
+
+ol {
   list-style-type: decimal;
-  padding-bottom: 0.3529411765em; /* 6px */
 }
-ul:not([class]) li {
-  list-style-type: disc;
-  padding-bottom: 0.3529411765em; /* 6px */
-}
-ul:not([class]) ul li {
-  list-style-type: circle;
-  margin-left: 1.0588235294em; /* 18 / 17 */
-}
-.latest > li,
-.archive > li {
-  padding-bottom: 4.2352941176em; /* 72px */
+ul {
+  list-style-type: square;
 }
 
-figure {
-  border-top: 1px solid var(--color-p-base-emphasis);
-  padding-top: 11px;
-  margin: 6px 0 18px 0;
+ul.archive,
+.experience section > ol,
+.experience section > ul,
+header ol,
+header ul {
+  list-style-type: none;
+  margin-left: 0;
 }
-figcaption {
-  font-size: 12.7531882971px;
-  line-height: 18px;
-  color: var(--color-p-base-emphasis);
-  border-bottom: 1px solid var(--color-p-base-emphasis);
-  padding: 6px 6px 6px 6px;
+
+.experience ol > li {
+  margin-bottom: 1.3333333333em; /* 24 / 18 */
+}
+
+.resume li > ul {
+  border-left: 1px solid #333;
+  padding-left: 1.6666666667em; /* 30 / 18 */
+  margin-left: 0.6666666667em; /* 12 / 18 */
+}
+
+.meta,
+.meta li {
+  margin: 0;
+}
+.resume .meta {
+  margin-bottom: 0.6666666667em; /* 12 / 18 */
+}
+.resume .meta li:before {
+  content: "»";
+  padding-right: 0.3333333333em; /* 6 / 18 */
+}
+blockquote {
+  font-style: italic;
+  border-left: 6px solid #333;
+  padding: 0.1666666667em 0 0.1666666667em 0.6666666667em; /* 3/18, 12/18 */
+  margin-bottom: 0.6666666667em; /* 12px / 18px */
+}
+
+blockquote p {
+  margin: 0.3333333333em 0; /* 6px / 18px */
 }
 
 img {
   display: block;
   max-width: 100%;
 }
+#book img {
+  border: 1px solid #222523;
+}
+figure {
+  margin-bottom: 1.3333333333em; /* 24 / 18 */
+}
+figcaption {
+  padding: 0.8888888889em; /* 16px / 18px */
+}
+
+
 
 /* Inline Text Styles ====================================================== */
 
 a {
-  color: #2076b3;
-  color: var(--color-accent-primary);
-}
-
-header a,
-footer a,
-a[href="/archive/"] {
-  text-decoration: none;
+  color: inherit;
+  text-decoration-style: dotted;
 }
 
 b,strong {
@@ -201,123 +206,64 @@ cite,em,i {
   font-style: italic;
 }
 
+blockquote cite,
+blockquote em,
+blockquote i {
+  font-style: normal;
+}
+
+
 
 /* Landmark Styles ========================================================= */
 
-#header,
-#footer {
-  padding: 2.1176470588em /* 36px */ 24px 0.7058823529em /* 12px */ 24px;
-  clear: both;
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
 }
-#footer {
-  border: 0;
-}
-#content,
-#about {
-  padding: 1.4117647059em /* 24px */ 24px;
-}
-
-/* 540px */
-@media screen and (min-width: 33.75em) {
-  #header,
-  #footer,
-  #content,
-  #about {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-/* 660px */
-@media screen and (min-width: 41.25em) {
-  #header,
-  #footer,
-  #content,
-  #about {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-}
-/* 820px */
-@media screen and (min-width: 51.25em) {
-  #header,
-  #footer,
-  #content,
-  #about {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  #header,
-  #footer {
-    padding-top: 4.2352941176em; /* 72px */
-    padding-bottom: 1.4117647059em; /* 24px */
-  }
-  figure {
-    box-sizing: border-box;
-    width: 50%;
-    float: right;
-    margin: 6px -15% 18px 18px;
-  }
-}
-/* 1000px */
-@media screen and (min-width: 62.5em) {
-  #header,
-  #footer,
-  #content,
-  #about {
-    padding-right: 30%;
-  }
-  figure {
-    margin-right: -25%;
-  }
-}
-/* 1200px */
-@media screen and (min-width: 75em) {
-  html {
-    font-size: 1.25em; /* 20px */
-    line-height: 1.6em; /* 32px */
-  }
-  figure {
-    margin-right: -50%;
-  }
-}
-/* Landmark Contextual Styles ============================================== */
 
 #header h1 {
-  font-weight: 500;
+  margin-right: 1em; /* 24 / 24 */
 }
 
-#content header {
-  padding-bottom: 1.4117647059em; /* 24px */
+.nav {
+  display: flex;
+  margin: 0;
+  margin-top: 0.6666666667em; /* 12/18 */
+  padding: 0;
+  align-self: flex-end;
+}
+.nav li + li {
+  margin-left: 0.6666666667em; /* 12/18 */
+}
+.nav a {
+  display: block;
+  text-decoration: none;
+  line-height: 0;
+  padding: 1em 0.6666666667em; /* 12/18 */
 }
 
-#content h1 {
-  font-family: benton-sans-condensed;
-  font-size: 1.7647058824em; /* 30px */
-  line-height: 0.8333333333em; /*36px */
-  padding-bottom: 0;
-}
+/* Landmark Contextual Styles ============================================== */
+
 
 
 /* Styles for Source-code Examples ========================================= */
 
 code,
 pre {
-  background: #fdf6e3;
-  background: var(--color-p-base-background);
-  color: #657b83;
-  color: var(--color-p-base-body);
-  font-family: Menlo, Monaco, Consolas, 'Courier New', Courier, monospace;
-  font-size: 0.9411764706em; /* 16px */
-  font-style: normal;
-  font-weight: normal;
-  padding: 0 0.25em 0 0.25em; /* 4px */
+  font-family: fira-mono, Menlo, Monaco, Consolas, 'Courier New', Courier, monospace;
 }
 pre {
-  margin: 0 -14px 0.75em /* 12px */ -14px;
-  padding: 0.375em /* 6px */ 4px 0.375em /* 6px */ 14px;
+  font-size: 0.9444444444em; /* 17/18 */
+  line-height: 1.4117647059em; /* 24/17 */
+  margin-bottom: 0.9411764706em; /* 16/17 */
 }
-blockquote code {
-  background: inherit;
+code {
+  font-size: 0.9722222222em; /* 17.5 / 18 */
+  font-weight: normal;
+  font-style: normal;
+  line-height: 0;
 }
 a code {
   color: inherit;
@@ -329,8 +275,42 @@ header code,
   padding: 0;
 }
 pre code {
-  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
   background: inherit;
+  padding: 0;
+}
+
+/* Media Queries ========================================= */
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 20px; /* 22 / 16 */
+    line-height: 26px;
+  }
+
+#header,
+#content,
+#footer {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#header > *,
+#content > *,
+#footer > * {
+  max-width: 800px;
+}
+
+#book {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 13px;
+}
+#book h3 {
+  grid-column: 1 / 3;
+}
+
 }
 
 
@@ -339,136 +319,9 @@ pre code {
 /* ========================================================================= */
 
 
-/* PrismJS 1.17.1
- * Using a custom implementation of the Solarized palette
- * https://ethanschoonover.com/solarized/
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  white-space: normal;
-}
-
-/* TODO: Alphabetize and sort these */
-
-.language-json .token.property,
-.language-bash .token.number,
-.language-bash .token.string {
-  color: #657b83;
-  color: var(--color-p-base-body);
-}
-
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.cdata {
-  color: #93a1a1;
-  color: var(--color-p-base-comments);
-}
-
-.token.bold,
-.token.punctuation {
-  color: #586e75;
-  color: var(--color-p-base-emphasis);
-}
-
-.token.doctype,
-.token.cdata,
-.token.atrule .token.rule,
-.token.operator,
-.token.symbol,
-.token.method-definition .token.function,
-.language-json .token.boolean,
-.language-json .token.number,
-.language-git .token.parameter {
-  color: #859900; /* green */
-}
-.token.tag,
-.token.selector,
-.token.class-name,
-.token.constant {
-  color: #d33682; /* magenta */
-}
-.token.attr-value,
-.token.attr-value .token.punctuation + .punctuation,
-.token.string {
-  color: #268bd2; /* blue */
-}
-.token.attr-name,
-.token.attr-value .token.punctuation,
-.token.property,
-.token.keyword,
-.language-ruby .token.number {
-  color: #6c71c4; /* violet */
-}
-
-.token.boolean,
-.token.number,
-.token.variable {
-  color: #2aa198; /* cyan */
-}
-
-.token.entity,
-.token.important {
-  color: #dc322f; /* red */
-}
-
-.token.atrule,
-.token.function,
-.language-ruby .token.keyword,
-.token.command {
-  color: #cb4b16; /* orange */
-}
-
-.token.regex,
-.language-json .token.operator {
-  color: #b58900; /* yellow */
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.inserted,
-.token.deleted {
-  color: inherit;
-}
-
+/* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+git+json+ruby */
+code[class*=language-],pre[class*=language-]{color:#ccc;background:0 0;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#222523}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}
 
 
 
@@ -485,7 +338,7 @@ pre[class*="language-"] {
 }
 
 .g body::after {
-  background: url('data:image/svg+xml;utf8,<svg height="24" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  background: url('data:image/svg+xml;utf8,<svg height="13" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
   content: "";
   display: block;
   pointer-events: none;

@@ -1,0 +1,40 @@
+@page {
+  size: auto;
+  margin: 0.82in;
+}
+
+html {
+  font-size: 13pt;
+}
+h2 {
+  font-size: 17pt;
+}
+
+#header,
+#footer {
+  display: none;
+}
+
+section {
+  orphans: 2;
+}
+
+header, h3 {
+  break-inside: avoid-page;
+  break-after: avoid-page;
+}
+ul > li {
+  break-inside: avoid-page;
+}
+
+a {
+  text-decoration: none;
+}
+a::after {
+  content: ' (' attr(href) ')';
+}
+
+.contact a::after,
+a[rel="nofollow"]::after {
+  content: "";
+}

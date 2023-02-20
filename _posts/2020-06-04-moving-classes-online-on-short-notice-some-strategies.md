@@ -1,5 +1,7 @@
 ---
 title: "Moving Classes Online on Short Notice: Some Strategies"
+description: >
+  A short link and a Creative Commons license to smooth the way.
 link: https://ks4.us/short-notice
 category: linked
 ---

@@ -1,10 +1,14 @@
 ---
 title: Now Even the FBI is Warning about Your Smart TV’s Security
+description: >
+  As soon as monetization is involved, security concerns go right out the
+  window.
 link: https://techcrunch.com/2019/12/01/fbi-smart-tv-security/
 category: linked
 ---
 
 Simple truths:
+
 > The FBI
 > [recommends](https://www.fbi.gov/contact-us/field-offices/portland/news/press-releases/tech-tuesdaysmart-tvs/?=portland-field-office)
 > placing black tape over an unused smart TV camera, keeping your smart TV up-to-date with the

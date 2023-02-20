@@ -2,9 +2,14 @@
 layout: default
 ---
 
-{% if page.title %}
-<header>
-  <h2>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</h2>
-</header>
-{% endif %}
-{{ content }}
+<article>
+
+  {% if page.title %}
+  <header>
+    <h2>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }}</h2>
+  </header>
+  {% endif %}
+
+  {{ content }}
+
+</article>

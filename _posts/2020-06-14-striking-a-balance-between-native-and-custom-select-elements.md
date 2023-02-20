@@ -1,5 +1,8 @@
 ---
 title: Striking a Balance Between Native and Custom Select Elements
+description: >
+  Sandrina Pereira has authored a thoughtful and well engineered approach to styling HTML select
+  elements.
 link: https://css-tricks.com/striking-a-balance-between-native-and-custom-select-elements/
 category: linked
 ---

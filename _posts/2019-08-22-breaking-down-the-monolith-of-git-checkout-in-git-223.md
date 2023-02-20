@@ -1,5 +1,7 @@
 ---
 title: Breaking Down the Monolith of `git checkout` in Git 2.23
+description: >
+  Great overview of the changes in Git 2.23.
 link: https://github.blog/2019-08-16-highlights-from-git-2-23/
 category: linked
 tags: devto

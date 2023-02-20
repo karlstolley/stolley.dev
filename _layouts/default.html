@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="{{ page.category }}">
 <head>
-  <title>{% if page.title %}{{ page.title | escape }}: {% endif %}stolley.dev</title>
+  <title>{% if page.title %}{{ page.title | escape }}: {% endif %}Karl Stolley</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <meta name="theme-color" content="#222523">
   <link rel="stylesheet" href="/assets/css/screen.css">
-  <link rel="stylesheet" href="https://use.typekit.net/wxg6qvw.css">
+  <link rel="stylesheet" href="/assets/css/print.css" media="print">
+  <link rel="stylesheet" href="https://use.typekit.net/atp6rup.css">
   <link rel="alternate" type="application/atom+xml" title="All Posts" href="https://stolley.dev/feeds/all.xml">
   <link rel="alternate" type="application/atom+xml" title="Linked Posts" href="https://stolley.dev/feeds/linked.xml">
   <link rel="alternate" type="application/json" title="JSON All Posts" href="https://stolley.dev/feeds/all.json">
 </head>
-<body class="{{ page.categories | join: " " }}">
+<body>
+
 <header id="header">
-  <h1><a href="https://stolley.dev/">stolley.dev</a></h1>
+  <h1><a href="https://stolley.dev/">Karl Stolley</a></h1>
+  <nav id="navigation">
+    <ul class="nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/resume/">Résumé</a></li>
+    </ul>
+  </nav>
 </header>
+
 <main id="content">
 
   {{ content }}
 
 </main>
-
-{% include aside.html %}
 
 <footer id="footer">
   <small>
@@ -28,6 +37,7 @@
   </small>
   <a href="https://github.com/karlstolley/stolley.dev" id="github">Source on Github</a>.
 </footer>
+
 <script src="/assets/js/site.js"></script>
 </body>
 </html>

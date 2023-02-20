@@ -2,15 +2,15 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
       type: "pages"
     values:
       layout: "basic"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
 
 url: https://stolley.dev
 

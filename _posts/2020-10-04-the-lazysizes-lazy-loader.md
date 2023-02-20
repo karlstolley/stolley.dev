@@ -1,5 +1,7 @@
 ---
 title: The lazysizes lazy-loader
+description: >
+  Hanging onto this for experimentation and at least a study in prior art.
 link: https://github.com/aFarkas/lazysizes
 date: 2020-10-04 12:07:00 -0400
 category: linked

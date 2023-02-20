@@ -1,5 +1,5 @@
 {
-  "id": "v02",
+  "id": "v03",
   "viewports": [
     {
       "label": "tiny",
@@ -10,85 +10,42 @@
       "label": "small",
       "width": 660,
       "height": 660
-    },
-    {
-      "label": "medium",
-      "width": 820,
-      "height": 820
-    },
-    {
-      "label": "large",
-      "width": 1000,
-      "height": 1000
-    },
-    {
-      "label": "larger",
-      "width": 1200,
-      "height": 1200
     }
   ],
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "Stolley.dev Homepage",
+      "label": "Home Page",
       "url": "http://localhost:4000/"
     },
     {
-      "label": "Stolley.dev Archive",
+      "label": "Resume",
+      "url": "http://localhost:4000/resume/"
+    },
+    {
+      "label": "Linked Post Example",
+      "url": "http://localhost:4000/linked/two-value-display-properties-in-css/"
+    },
+    {
+      "label": "Post with Code, Numbered List",
+      "url": "http://localhost:4000/posted/properly-configuring-nightwatch-to-run-geckodriver/"
+    },
+    {
+      "label": "Post with Code, Image, Figcaption",
+      "url": "http://localhost:4000/posted/supports-shines-brightest-on-dependent-styles/"
+    },
+    {
+      "label": "Full Archive",
       "url": "http://localhost:4000/archive/"
     },
     {
-      "label": "Linked: Breaking Down the Monolith",
-      "url": "http://localhost:4000/linked/example-link-post/"
+      "label": "Links Archive",
+      "url": "http://localhost:4000/linked/"
     },
     {
-      "label": "Post: Test Post",
-      "url": "http://localhost:4000/test-post/"
-    },
-    {
-      "label": "Post: Lorem Ipsum",
-      "url": "http://localhost:4000/lorem-ipsum/"
-    },
-    {
-      "label": "Post: Syntax Highlighting",
-      "url": "http://localhost:4000/syntax/"
-    },
-    {
-      "label": "DARK Stolley.dev Homepage",
-      "url": "http://localhost:4000/",
-      "clickSelector": "#footer a#mode",
-      "postInteractionWait": 1000
-    },
-    {
-      "label": "DARK Stolley.dev Archive",
-      "url": "http://localhost:4000/archive/",
-      "clickSelector": "#footer a#mode",
-      "postInteractionWait": 1000
-    },
-    {
-      "label": "DARK Linked: Breaking Down the Monolith",
-      "url": "http://localhost:4000/linked/example-link-post/",
-      "clickSelector": "#footer a#mode",
-      "postInteractionWait": 1000
-    },
-    {
-      "label": "DARK Post: Test Post",
-      "url": "http://localhost:4000/test-post/",
-      "clickSelector": "#footer a#mode",
-      "postInteractionWait": 1000
-    },
-    {
-      "label": "DARK Post: Lorem Ipsum",
-      "url": "http://localhost:4000/lorem-ipsum/",
-      "clickSelector": "#footer a#mode",
-      "postInteractionWait": 1000
-    },
-    {
-      "label": "DARK Post: Syntax Highlighting",
-      "url": "http://localhost:4000/syntax/",
-      "clickSelector": "#footer a#mode",
-      "postInteractionWait": 1000
+      "label": "Posts Archive",
+      "url": "http://localhost:4000/posted/"
     }
   ],
   "paths": {

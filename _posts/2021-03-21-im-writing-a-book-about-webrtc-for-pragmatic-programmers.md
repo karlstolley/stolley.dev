@@ -1,5 +1,7 @@
 ---
 title: I'm Writing a Book about WebRTC for Pragmatic Programmers
+description: >
+  I can say that this is book project is fixing to be whatever the opposite of lonely is.
 date: 2021-03-21 18:25:30 -0500
 category: posted
 tags:
@@ -8,7 +10,7 @@ tags:
   - pragprog
 ---
 
-I went from not even realizing I was going to write a book to having a signed contact with PragProg in 82 days: December 17, 2020 was the first day I worked in earnest on the proposal, and March 9, 2021 was the day I received and signed the contract. 
+I went from not even realizing I was going to write a book to having a signed contact with PragProg in 82 days: December 17, 2020 was the first day I worked in earnest on the proposal, and March 9, 2021 was the day I received and signed the contract.
 
 I’d only just submitted the proposal itself eight days earlier, on March 1. At 9:18am. I note the time, because it was just 28 minutes later that I heard from an Author Relations contact at PragProg with some of the best words a writer can hear:
 

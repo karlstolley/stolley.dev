@@ -3,6 +3,6 @@
   <ul class="meta">
     {% assign link_parts = page.link | split: "/" %}
     <li>{{ page.date | date: "%-d %B %Y" }}</li>
-    <li><a href="{{ page.link }}">{{ link_parts[2] }}</a><!-- domain of link, linked to the item --></li>
+    <li><a href="{{ page.link }}">{{ link_parts[2] }}</a></li>
   </ul>
 </header>
