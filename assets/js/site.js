@@ -17,11 +17,17 @@ if ('serviceWorker' in navigator) {
   function stripTrackerBullshit(loc) {
     loc = loc.split('?');
     if (loc.length > 1) {
-      location.href = loc[0];
+      if ('replaceState' in window.history) {
+        // The modern way, without a reload
+        window.history.replaceState(null, '', loc[0]);
+      } else {
+        // Fallback to reload it the old-fashioned way
+        window.location.href = loc[0];
+      }
     }
   }
 
-  stripTrackerBullshit(location.href);
+  stripTrackerBullshit(window.location.href);
 
   if (!('querySelector' in document && 'insertAdjacentHTML' in document.createElement('div') && 'fetch' in window)) {
     // Go no further if a browser doesn't have querySelector, insertAdjacentElement, or fetch
@@ -50,7 +56,7 @@ if ('serviceWorker' in navigator) {
 
     if (window.location.hostname === 'localhost') return; // keep Backstop et al. from clobbering GitHub
 
-    var github_anchor = document.querySelector('#github');
+    const github_anchor = document.querySelector('#github');
 
     if (github_anchor !== null) {
       // Fetch latest commit from GitHub
@@ -61,12 +67,6 @@ if ('serviceWorker' in navigator) {
           return 'https://api.github.com/repos/' + fragment + '/commits?per_page=1'; // return the API url
         }
       })();
-
-      function escapeHTML(str) {
-        var div = document.createElement('div');
-        div.appendChild(document.createTextNode(str));
-        return div.innerHTML;
-      }
 
       if(typeof(github_url) !== "undefined") {
         fetch(github_url)
@@ -99,6 +99,12 @@ if ('serviceWorker' in navigator) {
           document.querySelector('#github').remove();
         });
       }
+    }
+
+    function escapeHTML(str) {
+      var div = document.createElement('div');
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
     }
 
   // end DOMContentLoaded event listener
