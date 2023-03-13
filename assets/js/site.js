@@ -48,6 +48,8 @@ if ('serviceWorker' in navigator) {
   // DOM Manipulation
   document.addEventListener('DOMContentLoaded', function(e) {
 
+    if (window.location.hostname === 'localhost') return; // keep Backstop et al. from clobbering GitHub
+
     var github_anchor = document.querySelector('#github');
 
     if (github_anchor !== null) {
