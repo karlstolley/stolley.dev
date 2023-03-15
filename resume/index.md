@@ -17,7 +17,7 @@ layout: bare
 <article>
   <h2>Summary</h2>
   <ul>
-    <li>20+ years practicing full-stack web development (LAMP, Node.JS, Rails)</li>
+    <li>20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)</li>
     <li>20 years researching and teaching generalist and specialist web design and development courses at the university level</li>
     <li>15+ years publishing and presenting on web development topics for both technical and non-specialist audiences</li>
     <li>15 years advising and mentoring undergraduate- and graduate-level software developers, information architects, and technical writers</li>
@@ -332,7 +332,7 @@ layout: bare
       applications (PWAs).
     </li>
     <li>
-      <b>Web frameworks and servers:</b> Node.JS, Express.js, Socket.io, PM2. Ruby, Sinatra, Ruby on
+      <b>Web frameworks and servers:</b> Node.js, Express.js, Socket.io, PM2. Ruby, Sinatra, Ruby on
       Rails, Puma. Jekyll, Hugo. Apache, Nginx.
     </li>
     <li>
