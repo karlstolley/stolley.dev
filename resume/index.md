@@ -17,11 +17,24 @@ layout: bare
 <article>
   <h2>Summary</h2>
   <ul>
-    <li>20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)</li>
-    <li>20 years researching and teaching generalist and specialist web design and development courses at the university level</li>
-    <li>15+ years publishing and presenting on web development topics for both technical and non-specialist audiences</li>
-    <li>15 years advising and mentoring undergraduate- and graduate-level software developers, information architects, and technical writers</li>
-    <li>10+ years serving as a technical reviewer for industry and academic publications and conferences</li>
+    <li>
+      20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)
+    </li>
+    <li>
+      20 years researching and teaching web design and development at the university level
+    </li>
+    <li>
+      15+ years publishing and presenting on web development topics for both technical and
+      non-specialist audiences
+    </li>
+    <li>
+      15 years advising and mentoring undergraduate- and graduate-level software developers,
+      information architects, and technical writers
+    </li>
+    <li>
+      10+ years serving as a technical reviewer for industry and academic publications and
+      conferences
+    </li>
   </ul>
 </article>
 
@@ -340,7 +353,8 @@ layout: bare
       Linear, Bugzilla. TravisCI. Markdown.
     </li>
     <li>
-      <b>Design and video-production tools:</b> Figma, Pixelmator, Concepts. Final Cut Pro.</li>
+      <b>Design and video-production tools:</b> Figma, Pixelmator, Concepts. Final Cut Pro.
+    </li>
     <li>
       <b>Writing and editorial:</b> The Chicago Manual of Style; Garner’s Modern English Usage.
     </li>
