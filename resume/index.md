@@ -112,8 +112,8 @@ layout: bare
             Interaction and Web Design, and Web Systems Integration (microservices and APIs)
           </li>
           <li>
-            Delivered classroom instruction and interacted with fully remote students, even before
-            COVID-19
+            Delivered classroom instruction and interacted with fully remote students via
+            synchronous and asynchronous communication channels
           </li>
           <li>
             Advised and coached students from various computational disciplines engaged in graduate-
@@ -152,12 +152,12 @@ layout: bare
             and 15 PhD students
           </li>
           <li>
-            Designed, installed, and maintained an instructional computer lab and backing server
-            in collaboration with university librarians
+            Designed, installed, and maintained a 20-workstation instructional computer lab and
+            backing server in collaboration with university librarians
           </li>
           <li>
-            Administered and maintained departmental servers for internal information-sharing and
-            email lists
+            Administered and maintained departmental Linux servers for internal information-sharing
+            and email lists
           </li>
         </ul>
       </li>
@@ -184,7 +184,7 @@ layout: bare
             LAMP stack
           </li>
           <li>
-            Ensured site accessibility via user-testing and conformance with WCAG, Level AA
+            Ensured site accessibility via user-testing and conformance with WCAG, Level Double-A
           </li>
           <li>
             Achieved and maintained number-one Google search result for <i>writing</i>
