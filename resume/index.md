@@ -342,7 +342,7 @@ layout: bare
     <li>
       <b>Web platform:</b> HTML, CSS, JavaScript; ARIA, ARIA in HTML, WCAG, WebSockets, WebRTC.
       Haml, Less, Sass/SCSS, CoffeeScript. Responsive design; intrinsic design; progressive web
-      applications (PWAs).
+      applications (PWAs). Accessibility. User-centered design. User experience.
     </li>
     <li>
       <b>Web frameworks and servers:</b> Node.js, Express.js, Socket.io, PM2. Ruby, Sinatra, Ruby on
