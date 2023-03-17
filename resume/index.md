@@ -21,15 +21,16 @@ layout: bare
       20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)
     </li>
     <li>
-      20 years researching and teaching web design and development at the university level
+      20 years researching and teaching front-end and full-stack web development at the university
+      level
     </li>
     <li>
-      15+ years publishing and presenting on web development topics for both technical and
-      non-specialist audiences
+      15+ years publishing and presenting talks and workshops on web development topics for
+      technical and non-specialist audiences
     </li>
     <li>
-      15 years advising and mentoring undergraduate- and graduate-level software developers,
-      information architects, and technical writers
+      15 years advising, coaching, and mentoring software developers, information architects, and
+      technical writers
     </li>
     <li>
       10+ years serving as a technical reviewer for industry and academic publications and
@@ -63,15 +64,16 @@ layout: bare
             Updated product documentation to ensure concord with product API features in production
           </li>
           <li>
-            Reviewed pull requests on product and demo code
+            Reviewed pull requests on product and documentation maintained in a monorepo; also
+            demo code in modular repositories
           </li>
           <li>
             Prepared a 90-minute online workshop to showcase the Daily Prebuilt product to an
             audience of external developers
           </li>
           <li>
-            Coached and offered editorial support to writers across and external to the company in
-            the preparation of technical blog posts
+            Coached and offered editorial feedback to engineer-writers in the preparation of
+            technical blog posts
           </li>
         </ul>
       </li>
@@ -94,17 +96,18 @@ layout: bare
         </header>
         <ul>
           <li>
-            Created and taught original web-specialization courses on Ruby on Rails, RESTful data
-            APIs, and Node.js
+            Created and taught original web-specialization courses on web standards, Ruby on Rails,
+            RESTful data APIs, and Node.js
           </li>
           <li>
-            Structured courses in web development to emphasize version control (Git) and automated
-            testing on the front- and backend (e.g., Mocha, Test::Unit), as well as visual
+            Structured courses in web development to emphasize agile development backed by version
+            control (Git) and automated testing (Mocha, Test::Unit), as well as visual
             regression testing (BackstopJS)
           </li>
           <li>
-            Coached student engineers in writing, from commit messages to release notes and
-            effective use of sync and async communication channels
+            Coached student engineers in writing commit messages and release notes as well as
+            effective use of synchronous and asynchronous communication channels (Basecamp, Discord,
+            Slack)
           </li>
           <li>
             Developed and taught new courses that were adopted as the department standard for other
@@ -112,8 +115,8 @@ layout: bare
             Interaction and Web Design, and Web Systems Integration (microservices and APIs)
           </li>
           <li>
-            Delivered classroom instruction and interacted with fully remote students via
-            synchronous and asynchronous communication channels
+            Delivered classroom instruction, interacted, and collaborated with fully remote students
+            and student teams via synchronous and asynchronous communication channels
           </li>
           <li>
             Advised and coached students from various computational disciplines engaged in graduate-
@@ -141,7 +144,8 @@ layout: bare
         <ul>
           <li>
             Taught a two-course sequence in standards-based web design and web application
-            fundamentals (Ruby on Rails) to students without programming backgrounds
+            fundamentals (HTML, CSS, vanilla JS; Ruby on Rails) to students without programming
+            backgrounds
           </li>
           <li>
             Created and offered courses on information architecture, knowledge management, and
@@ -153,7 +157,8 @@ layout: bare
           </li>
           <li>
             Designed, installed, and maintained a 20-workstation instructional computer lab and
-            backing server in collaboration with university librarians
+            backing server in collaboration with university librarians (triple-booted into Windows,
+            macOS, and Ubuntu Linux)
           </li>
           <li>
             Administered and maintained departmental Linux servers for internal information-sharing
@@ -184,10 +189,11 @@ layout: bare
             LAMP stack
           </li>
           <li>
-            Ensured site accessibility via user-testing and conformance with WCAG, Level Double-A
+            Ensured site accessibility via user-testing and assessed conformance with Section 508
+            and WCAG, Level Double-A
           </li>
           <li>
-            Achieved and maintained number-one Google search result for <i>writing</i>
+            Achieved and maintained number-one Google SEO result for <i>writing</i>
           </li>
         </ul>
       </li>
@@ -205,8 +211,8 @@ layout: bare
             introductory writing
           </li>
           <li>
-            Enrolled in four semester-long graduate-level teaching practicums to gain formal
-            command of teaching methods and their underlying pedagogical and educational theory
+            Enrolled in four semester-long graduate-level teaching practicums to gain formal command
+            of instructional methods and their underlying pedagogical and educational theories
           </li>
         </ul>
       </li>
@@ -340,9 +346,10 @@ layout: bare
   <h2>Selected Skills</h2>
   <ul>
     <li>
-      <b>Web platform:</b> HTML, CSS, JavaScript; ARIA, ARIA in HTML, WCAG, WebSockets, WebRTC.
-      Haml, Less, Sass/SCSS, CoffeeScript. Responsive design; intrinsic design; progressive web
-      applications (PWAs). Accessibility. User-centered design. User experience.
+      <b>Web platform:</b> HTML, CSS, JavaScript; ARIA, ARIA in HTML, WCAG, Section 508; real-time
+      Web APIs: WebSockets, WebRTC. Haml, Less, Sass/SCSS, CoffeeScript. Responsive design;
+      intrinsic design; progressive web applications (PWAs). Accessibility. User-centered design.
+      User experience.
     </li>
     <li>
       <b>Web frameworks and servers:</b> Node.js, Express.js, Socket.io, PM2. Ruby, Sinatra, Ruby on
