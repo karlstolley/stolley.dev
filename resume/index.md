@@ -241,6 +241,20 @@ layout: bare
       </li>
       <li>
         <header>
+          <h4>Mozilla Developer Network (MDN)</h4>
+          <ul class="meta">
+            <li class="when">2016–present</li>
+          </ul>
+        </header>
+        <ul>
+          <li>
+            Served as open-source contributor to MDN’s best-in-industry documentation, browser
+            compatibility data, and code for interactive examples
+          </li>
+        </ul>
+      </li>
+      <li>
+        <header>
           <h4>The Newberry Library Digital Collections for Classroom Use</h4>
           <ul class="meta">
             <li class="when">2011–2013</li>
