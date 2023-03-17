@@ -232,7 +232,7 @@ layout: bare
         </header>
         <ul>
           <li>
-            Served as a technical reviewer numerous books, including Trevor Burnham’s
+            Served as a technical reviewer for numerous books, including Trevor Burnham’s
             <cite>Asynchronous JavaScript</cite>, Faraz Kelhini’s <cite>Modern Asynchronous
             JavaScript</cite> and <cite>High-Performance Text Processing</cite>, and Erica Sadun’s
             <cite>Numerical Brain Teasers</cite>
