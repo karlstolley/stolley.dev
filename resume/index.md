@@ -220,7 +220,7 @@ layout: bare
   </section>
   <section>
     <header>
-      <h3>Independent Contracting, Reviewing, and Consulting</h3>
+      <h3>Community and Open-Source Contributions</h3>
     </header>
     <ol>
       <li>
@@ -253,6 +253,13 @@ layout: bare
           </li>
         </ul>
       </li>
+    </ol>
+  </section>
+  <section>
+    <header>
+      <h3>Independent Contracting</h3>
+    </header>
+    <ol>
       <li>
         <header>
           <h4>The Newberry Library Digital Collections for Classroom Use</h4>
