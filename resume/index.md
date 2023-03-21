@@ -18,18 +18,18 @@ layout: bare
   <h2>Summary</h2>
   <ul>
     <li>
-      20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)
+      20+ years commanding and implementing spec-level knowledge of front-end web standards (HTML,
+      CSS, and JavaScript)
     </li>
     <li>
-      20 years researching and teaching front-end and full-stack web development at the university
-      level
+      20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)
     </li>
     <li>
       15+ years publishing and presenting talks and workshops on web development topics for
       technical and non-specialist audiences
     </li>
     <li>
-      15 years advising, coaching, and mentoring software developers, information architects, and
+      15 years teaching, coaching, and mentoring software developers, information architects, and
       technical writers
     </li>
     <li>
@@ -45,7 +45,7 @@ layout: bare
     <header>
       <h3>
         Daily,
-        <a href="https://www.daily.co/" rel="nofollow">www.daily.co</a>
+        <a href="https://www.daily.co/" rel="nofollow">www.daily.co</a> (remote)
       </h3>
     </header>
     <ol>
@@ -58,7 +58,8 @@ layout: bare
         </header>
         <ul>
           <li>
-            Maintained code supporting product documentation (Next.js) and company blog (Ghost Pro)
+            Maintained code supporting product documentation (React, Next.js) and company blog
+            (Ghost Pro)
           </li>
           <li>
             Updated product documentation to ensure concord with product API features in production
@@ -75,6 +76,9 @@ layout: bare
             Coached and offered editorial feedback to engineer-writers in the preparation of
             technical blog posts
           </li>
+          <li>
+            Collaborated effectively and asynchronously with coworkers from across the globe
+          </li>
         </ul>
       </li>
     </ol>
@@ -83,7 +87,7 @@ layout: bare
     <header>
       <h3>
         Illinois Institute of Technology,
-        <a href="https://www.iit.edu/" rel="nofollow">www.iit.edu</a>
+        <a href="https://www.iit.edu/" rel="nofollow">www.iit.edu</a> (Chicago, IL)
       </h3>
     </header>
     <ol>
@@ -96,8 +100,8 @@ layout: bare
         </header>
         <ul>
           <li>
-            Created and taught original web-specialization courses on web standards, Ruby on Rails,
-            RESTful data APIs, and Node.js
+            Created and taught original web-specialization courses on front-end development, Ruby on
+            Rails, RESTful data API design & consumption, and Node.js
           </li>
           <li>
             Structured courses in web development to emphasize agile development backed by version
@@ -105,13 +109,13 @@ layout: bare
             regression testing (BackstopJS)
           </li>
           <li>
-            Coached student engineers in writing commit messages and release notes as well as
-            effective use of synchronous and asynchronous communication channels (Basecamp, Discord,
-            Slack)
+            Coached student engineers in writing commit messages, inline documentation, and release
+            notes as well as effective use of synchronous and asynchronous communication channels
+            (Basecamp, Discord, Slack)
           </li>
           <li>
             Developed and taught new courses that were adopted as the department standard for other
-            instructors to teach from, including Fundamentals of Web Development, Human-Computer
+            instructors to follow, including Fundamentals of Web Development, Human-Computer
             Interaction and Web Design, and Web Systems Integration (microservices and APIs)
           </li>
           <li>
@@ -122,11 +126,6 @@ layout: bare
             Advised and coached students from various computational disciplines engaged in graduate-
             and undergraduate-level research and programming projects—including fielding technical
             questions about codebases and languages outside my core expertise
-          </li>
-          <li>
-            Led the development of a modernized web curriculum to reflect the realities and needs of
-            industry, including new and revised courses at all levels of education  (undergraduate
-            minor and major; graduate certificate; graduate specialization)
           </li>
         </ul>
       </li>
@@ -211,8 +210,8 @@ layout: bare
             introductory writing
           </li>
           <li>
-            Enrolled in four semester-long graduate-level teaching practicums to gain formal command
-            of instructional methods and their underlying pedagogical and educational theories
+            Enrolled in four semester-long graduate-level teaching practicums to develop formal
+            command of instructional methods and their underlying theories of learning and education
           </li>
         </ul>
       </li>
@@ -274,7 +273,7 @@ layout: bare
           </li>
           <li>
             Integrated with the Dropbox API to enable Chicago Public School teachers to build
-            custom lesson plans around Newberry’s digital resources
+            custom lesson plans around The Newberry’s digital resources
           </li>
         </ul>
       </li>
@@ -357,9 +356,9 @@ layout: bare
 <article>
   <h2>Education</h2>
   <ul>
-    <li>PhD, Purdue University. West Lafayette, IN, 2007.</li>
-    <li>MA, Purdue University. West Lafayette, IN, 2002.</li>
-    <li>BA, Millikin University. Decatur, IL, 2000.</li>
+    <li>Doctor of Philosophy, Purdue University. West Lafayette, IN, 2007.</li>
+    <li>Master of Arts, Purdue University. West Lafayette, IN, 2002.</li>
+    <li>Bachelor of Arts, Millikin University. Decatur, IL, 2000.</li>
   </ul>
 </article>
 
@@ -368,9 +367,9 @@ layout: bare
   <ul>
     <li>
       <b>Web platform:</b> HTML, CSS, JavaScript; ARIA, ARIA in HTML, WCAG, Section 508; real-time
-      Web APIs: WebSockets, WebRTC. Haml, Less, Sass/SCSS, CoffeeScript. Responsive design;
-      intrinsic design; progressive web applications (PWAs). Accessibility. User-centered design.
-      User experience.
+      Web APIs: WebSockets, WebRTC, Web Components. Preprocessors: Haml, Less, Sass/SCSS,
+      CoffeeScript. Responsive design; intrinsic design; progressive web applications (PWAs).
+      Progressive enhancement. Accessibility. User-centered design. User experience.
     </li>
     <li>
       <b>Web frameworks and servers:</b> Node.js, Express.js, Socket.io, PM2. Ruby, Sinatra, Ruby on

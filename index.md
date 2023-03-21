@@ -3,12 +3,14 @@ layout: bare
 ---
 
 <header>
-  <h2>I’m a full-stack web developer, technical author and speaker, and developer educator.</h2>
+  <h2>I’m a web developer, technical author & speaker, and developer educator.</h2>
 </header>
 
-I advocate tirelessly for accessibility, open standards, and readable but performant code. I coach
-and mentor other developers by example: not only by how I program, but also by how I communicate and
-collaborate.
+As a front-end-oriented full-stack developer, I prioritize accessibility, open standards, and
+readable but performant code.
+
+I coach and mentor other developers by example in all of my professional work: not only by how I
+program, but also by how I communicate and collaborate.
 
 <article id="book">
   <h3>Latest Book</h3>
