@@ -129,7 +129,6 @@ header ul,
 }
 
 .resume li > ul {
-  border-left: 1px solid #333;
   padding-left: 1.6666666667em; /* 30 / 18 */
   margin-left: 0.6666666667em; /* 12 / 18 */
 }
