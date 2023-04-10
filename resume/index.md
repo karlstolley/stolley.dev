@@ -21,7 +21,7 @@ layout: bare
     accessibility, and documentation. As a former university professor who recently shifted to an
     industry career, I have a record of technical publications and open-source contributions that
     show me to be a practiced communicator, generous collaborator, and champion of the web platform
-    in all its browser-native-API glory.
+    and its browser-native APIs.
   </p>
 </article>
 
