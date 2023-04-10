@@ -6,8 +6,9 @@ layout: bare
   <h2>I’m a web developer, technical author & speaker, and developer educator.</h2>
 </header>
 
-As a front-end-oriented full-stack developer, I prioritize accessibility, open standards, and
-readable but performant code.
+I prioritize accessibility, open standards, and readable but performant code. I’m fully committed to
+the web platform and its native APIs, and I harbor deep suspicions of JavaScript used to steamroll
+other, better front-end technologies.
 
 I coach and mentor other developers by example in all of my professional work: not only by how I
 program, but also by how I communicate and collaborate.
