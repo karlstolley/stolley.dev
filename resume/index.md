@@ -18,10 +18,10 @@ layout: bare
   <h2>Summary</h2>
   <p>
     I’m a front-end web developer with deep engineering commitments to open standards,
-    accessibility, and documentation. As a university professor who recently shifted to a new career
-    in industry, I have a record of technical publications and open-source contributions that show
-    me to be a practiced communicator, generous collaborator, and champion of the web platform in
-    all its browser-native-API glory.
+    accessibility, and documentation. As a former university professor who recently shifted to an
+    industry career, I have a record of technical publications and open-source contributions that
+    show me to be a practiced communicator, generous collaborator, and champion of the web platform
+    in all its browser-native-API glory.
   </p>
 </article>
 
