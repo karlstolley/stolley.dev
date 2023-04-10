@@ -16,27 +16,13 @@ layout: bare
 
 <article>
   <h2>Summary</h2>
-  <ul>
-    <li>
-      20+ years commanding and implementing spec-level knowledge of front-end web standards (HTML,
-      CSS, and JavaScript)
-    </li>
-    <li>
-      20+ years practicing full-stack web development (including LAMP, Node.js, Ruby on Rails)
-    </li>
-    <li>
-      15+ years publishing and presenting talks and workshops on web development topics for
-      technical and non-specialist audiences
-    </li>
-    <li>
-      15 years teaching, coaching, and mentoring software developers, information architects, and
-      technical writers
-    </li>
-    <li>
-      10+ years serving as a technical reviewer for industry and academic publications and
-      conferences
-    </li>
-  </ul>
+  <p>
+    I’m a front-end web developer with deep engineering commitments to open standards,
+    accessibility, and documentation. As a university professor who recently shifted to a new career
+    in industry, I have a record of technical publications and open-source contributions that show
+    me to be a practiced communicator, generous collaborator, and champion of the web platform in
+    all its browser-native-API glory.
+  </p>
 </article>
 
 <article class="experience">
